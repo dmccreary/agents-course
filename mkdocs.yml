@@ -9,6 +9,12 @@ edit_uri: 'blob/master/docs'
 nav:
   - Home: index.md
   - About: about.md
+  - Getting Started:
+    - Introduction: getting-started/index.md
+    - Picking Agent Library: getting-started/picking-agent-library.md
+    - GPU Drivers: getting-started/gpu-drivers.md
+    - Conda Setup: getting-started/conda-setup.md
+    - Testing Libraries: getting-started/testing-libraries.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md
