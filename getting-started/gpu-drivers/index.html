@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://dmccreary.github.io/agents-course/getting-started/gpu-drivers/">
       
       
+        <link rel="prev" href="../picking-agent-library/">
+      
+      
+        <link rel="next" href="../conda-setup/">
       
       
       <link rel="icon" href="../../img/favicon.ico">
@@ -22,7 +26,7 @@
     
     
       
-        <title>Installing GPU Drivers - Building Intelligent Agents Course</title>
+        <title>GPU Drivers - Building Intelligent Agents Course</title>
       
     
     
@@ -59,7 +63,7 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Installing GPU Drivers - Building Intelligent Agents Course" >
+        <meta  property="og:title"  content="GPU Drivers - Building Intelligent Agents Course" >
       
         <meta  property="og:description"  content="Resources for building intelligent agents using local GPU resources" >
       
@@ -75,7 +79,7 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Installing GPU Drivers - Building Intelligent Agents Course" >
+        <meta  name="twitter:title"  content="GPU Drivers - Building Intelligent Agents Course" >
       
         <meta  name="twitter:description"  content="Resources for building intelligent agents using local GPU resources" >
       
@@ -135,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installing GPU Drivers
+              GPU Drivers
             
           </span>
         </div>
@@ -288,6 +292,170 @@
       
   
   
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../picking-agent-library/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Picking Agent Library
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    GPU Drivers
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conda-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conda Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testing-libraries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testing Libraries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
   
   
     <li class="md-nav__item">
@@ -406,8 +574,25 @@
 
 
 <h1 id="installing-gpu-drivers">Installing GPU Drivers</h1>
+<p>We need to find out the exact version of CUDA we have on our local
+GPU before we install Python libraries.  We can find this out
+by running the <code>nvcc</code> command at the UNIX shell.</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>nvcc<span class="w"> </span>--version
 </code></pre></div></td></tr></table></div>
+<p>Response</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>$ nvcc --version
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2024 NVIDIA Corporation
+Built on Fri_Jun_14_16:34:21_PDT_2024
+Cuda compilation tools, release 12.6, V12.6.20
+Build cuda_12.6.r12.6/compiler.34431801_0
+</code></pre></div></td></tr></table></div>
+<p>Note that the CUDA release is 12.6.  We will use this later in our installation process.</p>
 
 
 
@@ -441,6 +626,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../picking-agent-library/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Picking Agent Library">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Picking Agent Library
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../conda-setup/" class="md-footer__link md-footer__link--next" aria-label="Next: Conda Setup">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Conda Setup
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
