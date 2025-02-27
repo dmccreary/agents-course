@@ -50,3 +50,10 @@ Executing generated code poses security risks, such as unintended system access 
 ## Conclusion
 
 The **CodeAgent** stands out in the Hugging Face SmolAgents library as an innovative agent that uses Python code snippets to perform actions, contrasting with traditional agents that rely on JSON or text-based tool calls. This approach offers greater flexibility, efficiency, and power, making it a compelling choice for developers building AI-driven solutions within a secure and streamlined framework.
+
+## References
+
+* [HuggingFace: Secure code execution in SmolAgents](https://huggingface.co/docs/smolagents/en/tutorials/secure_code_execution)
+* [HuggingFace Paper](https://huggingface.co/papers/2402.01030)
+* [Arxiv.org: Executable Code Actions Elicit Better LLM Agents](https://arxiv.org/abs/2402.01030) This work proposes to use executable Python code to consolidate
+LLM agents’ actions into a unified action space (CodeAct). Integrated with a Python interpreter, CodeAct can execute code actions and dynamically revise prior actions or emit new actions upon new observations through multi-turn interactions
