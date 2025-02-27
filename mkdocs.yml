@@ -15,6 +15,10 @@ nav:
     - GPU Drivers: getting-started/gpu-drivers.md
     - Conda Setup: getting-started/conda-setup.md
     - Testing Libraries: getting-started/testing-libraries.md
+    - Ollama Setup: getting-started/ollama-setup.md
+  - Concepts:
+    - Introduction: concepts/index.md
+    - Code Agents: concepts/code-agents.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md

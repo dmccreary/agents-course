@@ -12,7 +12,11 @@
 
 [Conda Setup](./conda-setup.md)
 
-## Testing Libraries
+## Testing Python Libraries
 
 [Testing Libraries](./testing-libraries.md)
+
+## Ollama Setup
+
+[Ollama Setup](ollama-setup.md)
 
