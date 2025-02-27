@@ -1,0 +1,1206 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Resources for building intelligent agents using local GPU resources">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/agents-course/getting-started/ollama-setup/">
+      
+      
+        <link rel="prev" href="../testing-libraries/">
+      
+      
+        <link rel="next" href="../../concepts/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.45">
+    
+    
+      
+        <title>Ollama Setup - Building Intelligent Agents Course</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Ollama Setup - Building Intelligent Agents Course" >
+      
+        <meta  property="og:description"  content="Resources for building intelligent agents using local GPU resources" >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/agents-course/assets/images/social/getting-started/ollama-setup.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/agents-course/getting-started/ollama-setup/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Ollama Setup - Building Intelligent Agents Course" >
+      
+        <meta  name="twitter:description"  content="Resources for building intelligent agents using local GPU resources" >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/agents-course/assets/images/social/getting-started/ollama-setup.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="black">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ollama-deepseek-setup" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Building Intelligent Agents Course" class="md-header__button md-logo" aria-label="Building Intelligent Agents Course" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Building Intelligent Agents Course
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ollama Setup
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/agents-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Building Intelligent Agents Course" class="md-nav__button md-logo" aria-label="Building Intelligent Agents Course" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    Building Intelligent Agents Course
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/agents-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../picking-agent-library/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Picking Agent Library
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gpu-drivers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPU Drivers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conda-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conda Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testing-libraries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testing Libraries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Ollama Setup
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Ollama Setup
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-ollama" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Ollama
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-ollama" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Ollama
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-ollama-as-a-unix-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup Ollama as a UNIX service
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-the-ollama-rest-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test the Ollama REST Service
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ollama-shell-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ollama Shell Commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-deepseek-r1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download DeepSeek-r1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-that-deepseek-r1-7b-is-working" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test that Deepseek-r1 7B is working
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deepseek-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      DeepSeek Response
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DeepSeek Response">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Thinking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#answer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Answer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-ollama-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Ollama Commands
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../concepts/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Concepts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How We Built This Site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-ollama" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Ollama
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-ollama" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Ollama
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-ollama-as-a-unix-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup Ollama as a UNIX service
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-the-ollama-rest-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test the Ollama REST Service
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ollama-shell-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ollama Shell Commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-deepseek-r1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download DeepSeek-r1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-that-deepseek-r1-7b-is-working" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test that Deepseek-r1 7B is working
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deepseek-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      DeepSeek Response
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DeepSeek Response">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Thinking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#answer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Answer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-ollama-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Ollama Commands
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/agents-course/blob/master/docs/getting-started/ollama-setup.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="ollama-deepseek-setup">Ollama Deepseek Setup</h1>
+<p>This is an example of installing Ollama and the DeepSeek R1 7b model
+on my local system that has a NVIDIA RTX 2070 GPU with 12GB RAM.</p>
+<h2 id="install-ollama">Install Ollama</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://ollama.com/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
+</code></pre></div></td></tr></table></div>
+<h2 id="test-ollama">Test Ollama</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>ollama<span class="w"> </span>--version
+</code></pre></div></td></tr></table></div>
+<p>Response:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>ollama version is 0.3.6
+</code></pre></div></td></tr></table></div>
+<h2 id="setup-ollama-as-a-unix-service">Setup Ollama as a UNIX service</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>sudo systemctl edit ollama.service
+</code></pre></div></td></tr></table></div>
+<p>Add the following lines:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>[Service]
+Environment=&quot;OLLAMA_HOST=0.0.0.0&quot;
+Environment=&quot;OLLAMA_ORIGINS=*&quot;
+</code></pre></div></td></tr></table></div>
+<h2 id="test-the-ollama-rest-service">Test the Ollama REST Service</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>curl<span class="w"> </span>http://localhost:11434/api/version
+</code></pre></div></td></tr></table></div>
+<p>Result:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>{&quot;version&quot;:&quot;0.3.6&quot;}
+</code></pre></div></td></tr></table></div>
+<h2 id="ollama-shell-commands">Ollama Shell Commands</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>ollama<span class="w"> </span>--help
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span></pre></div></td><td class="code"><div><pre><span></span><code>Large language model runner
+
+Usage:
+  ollama [flags]
+  ollama [command]
+
+Available Commands:
+  serve       Start ollama
+  create      Create a model from a Modelfile
+  show        Show information for a model
+  run         Run a model
+  pull        Pull a model from a registry
+  push        Push a model to a registry
+  list        List models
+  ps          List running models
+  cp          Copy a model
+  rm          Remove a model
+  help        Help about any command
+
+Flags:
+  -h, --help      help for ollama
+  -v, --version   Show version information
+
+Use &quot;ollama [command] --help&quot; for more information about a command.
+</code></pre></div></td></tr></table></div>
+<h2 id="download-deepseek-r1">Download DeepSeek-r1</h2>
+<p>You can download the full 7b model by adding the keyword <code>pull</code> and the model name to ollama.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>ollama<span class="w"> </span>pull<span class="w"> </span>deepseek-r1:7b
+</code></pre></div></td></tr></table></div>
+<p><img alt="" src="../download-deepseek-r1-7b.png" /></p>
+<h2 id="test-that-deepseek-r1-7b-is-working">Test that Deepseek-r1 7B is working</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code>ollama<span class="w"> </span>run<span class="w"> </span>deepseek-r1:7b
+&gt;&gt;&gt;<span class="w"> </span>/show<span class="w"> </span>info
+<span class="w">  </span>Model<span class="w">                          </span>
+<span class="w">    </span>arch<span class="w">                </span>qwen2<span class="w">            </span>
+<span class="w">    </span>parameters<span class="w">          </span><span class="m">7</span>.6B<span class="w">             </span>
+<span class="w">    </span>quantization<span class="w">        </span>Q4_K_M<span class="w">           </span>
+<span class="w">    </span>context<span class="w"> </span>length<span class="w">      </span><span class="m">131072</span><span class="w">           </span>
+<span class="w">    </span>embedding<span class="w"> </span>length<span class="w">    </span><span class="m">3584</span><span class="w">             </span>
+
+<span class="w">  </span>Parameters<span class="w">                     </span>
+<span class="w">    </span>stop<span class="w">    </span><span class="s2">&quot;&lt;｜begin▁of▁sentence｜&gt;&quot;</span><span class="w">   </span>
+<span class="w">    </span>stop<span class="w">    </span><span class="s2">&quot;&lt;｜end▁of▁sentence｜&gt;&quot;</span><span class="w">     </span>
+<span class="w">    </span>stop<span class="w">    </span><span class="s2">&quot;&lt;｜User｜&gt;&quot;</span><span class="w">                </span>
+<span class="w">    </span>stop<span class="w">    </span><span class="s2">&quot;&lt;｜Assistant｜&gt;&quot;</span><span class="w">           </span>
+
+<span class="w">  </span>License<span class="w">                        </span>
+<span class="w">    </span>MIT<span class="w"> </span>License<span class="w">                     </span>
+<span class="w">    </span>Copyright<span class="w"> </span><span class="o">(</span>c<span class="o">)</span><span class="w"> </span><span class="m">2023</span><span class="w"> </span>DeepSeek<span class="w">     </span>
+
+&gt;&gt;&gt;<span class="w"> </span>what<span class="w"> </span>are<span class="w"> </span>the<span class="w"> </span><span class="m">10</span><span class="w"> </span>most<span class="w"> </span>difficult<span class="w"> </span>concepts<span class="w"> </span><span class="k">in</span><span class="w"> </span>high-school<span class="w"> </span>geometry<span class="w"> </span>to<span class="w"> </span>understand?
+</code></pre></div></td></tr></table></div>
+<h2 id="deepseek-response">DeepSeek Response</h2>
+<h3 id="thinking">Thinking</h3>
+<p><think>
+Okay, so I need to figure out what the top 10 most difficult concepts in high school geometry are. Hmm, where do I start? I've taken geometry before, but it's been a while, so some of these might have faded from my 
+memory. Let me think step by step.</p>
+<p>First off, when I was learning geometry, one topic that always confused me was proofs. There were so many theorems and properties to remember, and constructing a logical argument seemed like a whole other language. I can't even recall exactly what an auxiliary line is, but I know it's used in proofs somehow.</p>
+<p>Then there are circles. I remember they have circumference, area, radius, diameter, and all those formulas, but when you start talking about angles subtended by chords or tangents, things got really tangled for me. It was hard to keep track of the different theorems related to circles, like the inscribed angle theorem or 
+something.</p>
+<p>Triangles are another big topic in geometry. There are so many types—scalene, isosceles, equilateral—and each has its own properties. Then there's Pythagoras' theorem for right-angled triangles, which I sometimes mixed 
+up with other formulas because they all looked similar. Also, triangle congruence and similarity were confusing at times; remembering SAS and ASA rules was a struggle.</p>
+<p>Coordinate geometry also tripped me up. It combines algebra and geometry, so you have to visualize shapes on the coordinate plane and use equations to find distances, slopes, and intersections. I remember struggling with finding the distance between two points using the distance formula and calculating midpoints or perpendicular lines.</p>
+<p>Transformations like translations, rotations, reflections, and dilations were another area where I had trouble. Understanding how figures change position or size on the coordinate plane was confusing without a clear visual. Also, similarity transformations confused me because they involved scaling, which adds another 
+layer of complexity.</p>
+<p>Trigonometry in geometry felt separate from what I had learned before. Learning sine, cosine, and tangent functions to find side lengths and angles in right triangles was initially tough. Then, when we moved on to 
+the unit circle, everything shifted, and it became even more abstract. I had trouble understanding how trigonometric ratios extended beyond right triangles.</p>
+<p>Three-dimensional geometry confused me a lot. Moving from 2D shapes to 3D solids like prisms, pyramids, cylinders, cones, and spheres introduced new concepts and formulas. Calculating surface area and volume required knowing which formula to apply when, and I often mixed them up or used the wrong dimensions in 
+calculations.</p>
+<p>Parallelograms had their own set of properties that needed to be memorized for proofs. Proving whether a quadrilateral was a parallelogram based on given information was tricky because there were multiple ways to 
+show it, like using opposite sides equal or parallel lines and angles.</p>
+<p>Probability in geometry was another point where I struggled. It wasn't just basic probability; integrating geometric principles made the problems more complex. Calculating probabilities based on areas or lengths required a good understanding of both geometry and probability concepts.</p>
+<p>Lastly, constructions with a compass and straightedge were a nightmare. It involved precise steps without any measurements, which felt restrictive. Forgetting a step in a construction could lead to an incorrect figure, and figuring out the right sequence without trial and error was frustrating.</p>
+<p>Wait, did I miss anything? Let me think... Maybe locus problems where you have to find points satisfying certain conditions. Or maybe transformations again; they were mentioned before but perhaps not explicitly listed as top 10. Hmm, since it's about difficulty, maybe those are already covered.</p>
+<p>I should also consider if the order makes sense. Proofs seem foundational but can be really challenging because they require logical reasoning. Then coordinate geometry and constructions build on previous knowledge with algebra and precise drawing skills. Trigonometry and circles add layers of complexity with their formulas and applications. Three-dimensional geometry might come last as it's more abstract.</p>
+<p>Yeah, I think that covers the main areas where students usually struggle in high school geometry. Each topic has its own challenges, but some require a strong foundation in other areas like algebra or logical reasoning.
+</think></p>
+<h3 id="answer">Answer</h3>
+<p>The top 10 most difficult concepts in high school geometry can be categorized based on their complexity and the skills they require:</p>
+<ol>
+<li>
+<p><strong>Geometric Proofs</strong>: Constructing logical arguments using axioms and previously proven theorems is challenging due to its abstract nature.</p>
+</li>
+<li>
+<p><strong>Circle Theorems</strong>: Understanding properties of circles, such as angles subtended by chords, tangents, and arcs requires memorization and application of multiple theorems.</p>
+</li>
+<li>
+<p><strong>Triangle Properties and Congruence/Similarity</strong>: Distinguishing between different types of triangles and applying congruence/similarity rules (e.g., SAS, ASA) can be confusing.</p>
+</li>
+<li>
+<p><strong>Coordinate Geometry</strong>: Combining algebra with geometry to find distances, slopes, and intersections on the coordinate plane is complex.</p>
+</li>
+<li>
+<p><strong>Transformations</strong>: Grasping concepts like translations, rotations, reflections, and dilations, especially their effects on figures in the coordinate plane, is challenging.</p>
+</li>
+<li>
+<p><strong>Trigonometry</strong>: Extending trigonometric ratios beyond right triangles using the unit circle abstracts the subject and complicates problem-solving.</p>
+</li>
+<li>
+<p><strong>Three-Dimensional Geometry</strong>: Calculating surface areas and volumes of 3D solids like prisms and pyramids requires applying specific formulas with attention to detail.</p>
+</li>
+<li>
+<p><strong>Parallelogram Properties</strong>: Proving properties of parallelograms based on given information involves multiple proof strategies.</p>
+</li>
+<li>
+<p><strong>Geometric Probability</strong>: Integrating probability concepts with geometric principles, such as area-based calculations, adds complexity.</p>
+</li>
+<li>
+<p><strong>Compass and Straightedge Constructions</strong>: Performing precise constructions without measurement tools demands careful step-by-step execution.</p>
+</li>
+</ol>
+<p>Each concept builds upon previous knowledge, requiring a blend of logical reasoning, algebraic skills, and spatial understanding. Mastery often necessitates practice and a solid grasp of foundational topics.</p>
+<blockquote>
+<blockquote>
+<blockquote></blockquote>
+</blockquote>
+</blockquote>
+<h2 id="other-ollama-commands">Other Ollama Commands</h2>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>/help
+Available Commands:
+  /set            Set session variables
+  /show           Show model information
+  /load <model>   Load a session or model
+  /save <model>   Save your current session
+  /clear          Clear session context
+  /bye            Exit
+  /?, /help       Help for a command
+  /? shortcuts    Help for keyboard shortcuts</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>Use """ to begin a multi-line message.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../testing-libraries/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Testing Libraries">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Testing Libraries
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../concepts/" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Introduction
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+    
+  </body>
+</html>

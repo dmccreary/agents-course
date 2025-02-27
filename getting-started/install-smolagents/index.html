@@ -1,0 +1,795 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Resources for building intelligent agents using local GPU resources">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/agents-course/getting-started/install-smolagents/">
+      
+      
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.45">
+    
+    
+      
+        <title>Intalling SmolAgents - Building Intelligent Agents Course</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Intalling SmolAgents - Building Intelligent Agents Course" >
+      
+        <meta  property="og:description"  content="Resources for building intelligent agents using local GPU resources" >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/agents-course/assets/images/social/getting-started/install-smolagents.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/agents-course/getting-started/install-smolagents/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Intalling SmolAgents - Building Intelligent Agents Course" >
+      
+        <meta  name="twitter:description"  content="Resources for building intelligent agents using local GPU resources" >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/agents-course/assets/images/social/getting-started/install-smolagents.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="black">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#intalling-smolagents" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Building Intelligent Agents Course" class="md-header__button md-logo" aria-label="Building Intelligent Agents Course" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Building Intelligent Agents Course
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Intalling SmolAgents
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/agents-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Building Intelligent Agents Course" class="md-nav__button md-logo" aria-label="Building Intelligent Agents Course" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    Building Intelligent Agents Course
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/agents-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../concepts/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Concepts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How We Built This Site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-smolagents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why SmolAgents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-smolagents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing SmolAgents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-smolagents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing SmolAgents
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Testing SmolAgents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Test
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-with-version-and-dir" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test with Version and Dir
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/agents-course/blob/master/docs/getting-started/install-smolagents.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="intalling-smolagents">Intalling SmolAgents</h1>
+<h2 id="why-smolagents">Why SmolAgents</h2>
+<p>AI agent frameworks are often criticized with two points:</p>
+<ol>
+<li>They build too many layers of abstraction, making them rigid and challenging to learn and use.</li>
+<li>They focus on "workflows" rather than building agents that can dynamically collaborate on their own using Python data structures.</li>
+</ol>
+<p>Smolagents has qualities that make ideal for simple agentic applications.</p>
+<ul>
+<li>The framework's abstractions are kept at a minimum.</li>
+<li>While most frameworks have the agents define their actions in JSON/text format, smolagents' main approach is <code>Code Agents</code> in which actions are written as Python code snippets (this is different from agents that write code).</li>
+<li>Being a Hugging Face framework, smolagents integrates well with the Hub and the Transformers library. You can use many models from the hub (some of them you can only use as a Pro user), and you can also work with proprietary models from OpenAI, Anthropic, etc.</li>
+<li>You can easily utilize the already-provided tools, or define your custom tools with minimum effort, almost as simple as writing a Python function.</li>
+</ul>
+<p>These qualities are what, on paper, make smolagents a plug-and-play with AI agents with little effort, so let's see if they hold in practice.</p>
+<h2 id="installing-smolagents">Installing SmolAgents</h2>
+<p>Make sure you are in the correct environment.  In this class we used conda to create an environment called "agents"</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>conda<span class="w"> </span>activate<span class="w"> </span>agents
+</code></pre></div></td></tr></table></div>
+<p>Next, use <code>pip</code> to install the smolagents Python library</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>smolagents
+pip<span class="w"> </span>install<span class="w"> </span><span class="s1">&#39;smolagents[litellm]&#39;</span>
+</code></pre></div></td></tr></table></div>
+<p>The second line also includes the litellm module.</p>
+<h2 id="testing-smolagents">Testing SmolAgents</h2>
+<h3 id="basic-test">Basic Test</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">smolagents</span> <span class="kn">import</span> <span class="n">SmoLAgent</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;SmoLAgents installed successfully!&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="test-with-version-and-dir">Test with Version and Dir</h3>
+<p>We can also use the Python <code>dir</code> function on the smolagents module
+to get a detailed list of the items in the smolagents Python library.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">smolagents</span>
+
+<span class="c1"># Print version and available modules</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;SmoLAgents version: </span><span class="si">{</span><span class="n">smolagents</span><span class="o">.</span><span class="n">__version__</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Available in smolagents: </span><span class="si">{</span><span class="nb">dir</span><span class="p">(</span><span class="n">smolagents</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Try to create a &quot;TestAgent&quot;</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">smolagents.agents</span> <span class="kn">import</span> <span class="n">Agent</span>
+    <span class="n">agent</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;TestAgent&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Agent created successfully with name: </span><span class="si">{</span><span class="n">agent</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Could not import Agent: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;SmoLAgents is installed!&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>SmoLAgents version: 1.9.2
+Available in smolagents: [&#39;AUTHORIZED_TYPES&#39;, &#39;ActionStep&#39;, &#39;AgentAudio&#39;, &#39;AgentError&#39;, &#39;AgentExecutionError&#39;, &#39;AgentGenerationError&#39;, &#39;AgentImage&#39;, &#39;AgentLogger&#39;, &#39;AgentMaxStepsError&#39;, &#39;AgentMemory&#39;, &#39;AgentParsingError&#39;, &#39;AgentText&#39;, &#39;AgentType&#39;, &#39;Any&#39;, &#39;AzureOpenAIServerModel&#39;, &#39;BASE_BUILTIN_MODULES&#39;, &#39;Callable&#39;, &#39;ChatMessage&#39;, &#39;CodeAgent&#39;, &#39;Dict&#39;, &#39;DuckDuckGoSearchTool&#39;, &#39;E2BExecutor&#39;, &#39;EMPTY_PROMPT_TEMPLATES&#39;, &#39;FinalAnswerPromptTemplate&#39;, &#39;FinalAnswerTool&#39;, &#39;Generator&#39;, &#39;GoogleSearchTool&#39;, &#39;GradioUI&#39;, &#39;Group&#39;, &#39;HfApiModel&#39;, &#39;List&#39;, &#39;LiteLLMModel&#39;, &#39;LocalPythonInterpreter&#39;, &#39;LogLevel&#39;, &#39;MLXModel&#39;, &#39;ManagedAgentPromptTemplate&#39;, &#39;MessageRole&#39;, &#39;Model&#39;, &#39;Monitor&#39;, &#39;MultiStepAgent&#39;, &#39;OpenAIServerModel&#39;, &#39;Optional&#39;, &#39;Panel&#39;, &#39;Path&#39;, &#39;PlanningPromptTemplate&#39;, &#39;PlanningStep&#39;, &#39;PromptTemplates&#39;, &#39;PythonInterpreterTool&#39;, &#39;Rule&#39;, &#39;Set&#39;, &#39;SpeechToTextTool&#39;, &#39;StrictUndefined&#39;, &#39;SystemPromptStep&#39;, &#39;TOOL_MAPPING&#39;, &#39;TaskStep&#39;, &#39;Template&#39;, &#39;Text&#39;, &#39;Tool&#39;, &#39;ToolCall&#39;, &#39;ToolCallingAgent&#39;, &#39;ToolCollection&#39;, &#39;TransformersModel&#39;, &#39;Tuple&#39;, &#39;TypedDict&#39;, &#39;Union&#39;, &#39;UserInputTool&#39;, &#39;VisitWebpageTool&#39;, &#39;YELLOW_HEX&#39;, &#39;__builtins__&#39;, &#39;__cached__&#39;, &#39;__doc__&#39;, &#39;__file__&#39;, &#39;__loader__&#39;, &#39;__name__&#39;, &#39;__package__&#39;, &#39;__path__&#39;, &#39;__spec__&#39;, &#39;__version__&#39;, &#39;_function_type_hints_utils&#39;, &#39;agent_types&#39;, &#39;agents&#39;, &#39;argparse&#39;, &#39;cli&#39;, &#39;create_repo&#39;, &#39;default_tools&#39;, &#39;deque&#39;, &#39;e2b_executor&#39;, &#39;evaluate_python_code&#39;, &#39;fix_final_answer_code&#39;, &#39;getLogger&#39;, &#39;get_clean_message_list&#39;, &#39;get_variable_names&#39;, &#39;gradio_ui&#39;, &#39;handle_agent_output_types&#39;, &#39;importlib&#39;, &#39;inspect&#39;, &#39;jinja2&#39;, &#39;json&#39;, &#39;launch_gradio_demo&#39;, &#39;leopard_prompt&#39;, &#39;load_dotenv&#39;, &#39;load_model&#39;, &#39;load_tool&#39;, &#39;local_python_executor&#39;, &#39;logger&#39;, &#39;main&#39;, &#39;make_init_file&#39;, &#39;memory&#39;, &#39;metadata_update&#39;, &#39;models&#39;, &#39;monitoring&#39;, &#39;os&#39;, &#39;parse_arguments&#39;, &#39;parse_code_blobs&#39;, &#39;parse_json_tool_call&#39;, &#39;populate_template&#39;, &#39;re&#39;, &#39;snapshot_download&#39;, &#39;stream_to_gradio&#39;, &#39;tempfile&#39;, &#39;textwrap&#39;, &#39;time&#39;, &#39;tool&#39;, &#39;tool_role_conversions&#39;, &#39;tool_validation&#39;, &#39;tools&#39;, &#39;truncate_content&#39;, &#39;upload_folder&#39;, &#39;utils&#39;, &#39;yaml&#39;]
+
+Could not import Agent: cannot import name &#39;Agent&#39; from &#39;smolagents.agents&#39; (/home/dan/miniconda3/envs/agents/lib/python3.13/site-packages/smolagents/agents.py)
+
+SmoLAgents is installed!
+</code></pre></div></td></tr></table></div>
+<h2 id="creating-a-model">Creating a Model</h2>
+<p>We can get a list of the agent types by looking for all method names with the string "Agent" it it.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># test-smolagents-final.py</span>
+<span class="kn">import</span> <span class="nn">smolagents</span>
+<span class="kn">from</span> <span class="nn">smolagents</span> <span class="kn">import</span> <span class="n">FinalAnswerTool</span>  <span class="c1"># Import directly from smolagents</span>
+<span class="kn">from</span> <span class="nn">smolagents.models</span> <span class="kn">import</span> <span class="n">Model</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;SmoLAgents version: </span><span class="si">{</span><span class="n">smolagents</span><span class="o">.</span><span class="n">__version__</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="c1"># Create a dummy model</span>
+    <span class="n">dummy_model</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;dummy-model&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Create a basic tool</span>
+    <span class="n">final_answer_tool</span> <span class="o">=</span> <span class="n">FinalAnswerTool</span><span class="p">()</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Successfully created tool and model!&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Print available agent types</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Available agent types:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">([</span><span class="n">name</span> <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">smolagents</span><span class="p">)</span> <span class="k">if</span> <span class="s1">&#39;Agent&#39;</span> <span class="ow">in</span> <span class="n">name</span><span class="p">])</span>
+
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;SmoLAgents installation test complete!&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>SmoLAgents version: 1.9.2
+Successfully created tool and model!
+
+Available agent types:
+[&#39;AgentAudio&#39;, &#39;AgentError&#39;, &#39;AgentExecutionError&#39;, &#39;AgentGenerationError&#39;, &#39;AgentImage&#39;, &#39;AgentLogger&#39;, &#39;AgentMaxStepsError&#39;, &#39;AgentMemory&#39;, &#39;AgentParsingError&#39;, &#39;AgentText&#39;, &#39;AgentType&#39;, &#39;CodeAgent&#39;, &#39;ManagedAgentPromptTemplate&#39;, &#39;MultiStepAgent&#39;, &#39;ToolCallingAgent&#39;]
+
+SmoLAgents installation test complete!
+</code></pre></div></td></tr></table></div>
+<h2 id="references">References</h2>
+<p><a href="https://www.youtube.com/watch?v=zlSENn-IunU&amp;t=7s">Build Fast with AI Video</a></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+    
+  </body>
+</html>
