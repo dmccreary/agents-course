@@ -275,7 +275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../about.md" class="md-nav__link">
+      <a href="../about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -506,6 +506,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      LangChain
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#large-language-model" class="md-nav__link">
     <span class="md-ellipsis">
       Large Language Model
@@ -527,6 +536,24 @@
   <a href="#ollama" class="md-nav__link">
     <span class="md-ellipsis">
       Ollama
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#private-knowledge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Private Knowledge
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-knowledge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public Knowledge
     </span>
   </a>
   
@@ -748,6 +775,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      LangChain
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#large-language-model" class="md-nav__link">
     <span class="md-ellipsis">
       Large Language Model
@@ -769,6 +805,24 @@
   <a href="#ollama" class="md-nav__link">
     <span class="md-ellipsis">
       Ollama
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#private-knowledge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Private Knowledge
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-knowledge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public Knowledge
     </span>
   </a>
   
@@ -872,21 +926,36 @@
 </li>
 </ol>
 <p>Effective knowledge representation systems in agents balance expressiveness (the ability to represent complex knowledge) with computational efficiency (allowing the agent to reason within reasonable time and resource constraints).</p>
+<h4 id="langchain">LangChain</h4>
+<p>An open-source framework designed to simplify the development of applications that leverage large language models (LLMs). </p>
+<p>LangChain provides a standardized interface for chaining together different components needed for LLM applications, such as prompt templates, language models, memory systems, and external tools or data sources.</p>
+<p>Key features of LangChain include:</p>
+<ol>
+<li><strong>Chains</strong>: Sequences of operations that combine prompts, models, and other components to perform complex tasks.</li>
+<li><strong>Agents</strong>: Systems that use LLMs as reasoning engines to determine which actions to take based on user input and tool feedback.</li>
+<li><strong>Memory</strong>: Components that allow applications to maintain conversational state and context over interactions.</li>
+<li><strong>Retrieval Augmented Generation (RAG)</strong>: Tools for connecting LLMs to external knowledge sources and databases to enhance responses with specific information.</li>
+<li><strong>Tool integration</strong>: Standardized methods for connecting LLMs to external APIs, databases, and computational resources.</li>
+</ol>
+<p>LangChain helps developers build sophisticated applications like chatbots, question-answering systems, summarization tools, and other AI assistants by providing reusable components and patterns that work across different LLM providers.</p>
+<p>The main disadvantage of LangChain is a long learning curve.  To use LangChain you must master several abstractions.</p>
 <h4 id="large-language-model">Large Language Model</h4>
 <h4 id="llm-agent-control-levels">LLM Agent Control Levels</h4>
 <p>The amount you allow an LLM to control agentic execution.
 Her are some sample levels:</p>
-<p>Level 0 - LLMs have no control
-Level 1 - LLMs can impact an if/then/else decision
-Level 2 - LLMs determine what functions should be called
-Level 3 - LLMs control iteration, and program order and continuation
-Level 4 - LLMs can start another agentic workflow
-Level 5 - LLMs can generate new code and run it</p>
-<ul>
-<li>See also: <a href="https://huggingface.co/docs/smolagents/conceptual_guides/intro_agents">HuggingFace Agent Definition</a></li>
-</ul>
+<ol>
+<li><strong>Level 0</strong> - LLMs have no control over workflows</li>
+<li><strong>Level 1</strong> - LLMs can impact an if/then/else decision within workflows</li>
+<li><strong>Level 2</strong> - LLMs determine what functions should be called</li>
+<li><strong>Level 3</strong> - LLMs control iteration, and program order and continuation</li>
+<li><strong>Level 4</strong> - LLMs can start another agentic workflow</li>
+<li><strong>Level 5</strong> - LLMs can generate new code and run it</li>
+</ol>
+<p>See also: <a href="https://huggingface.co/docs/smolagents/conceptual_guides/intro_agents">HuggingFace Agent Definition</a></p>
 <h4 id="ollama">Ollama</h4>
 <p>A software framework that enables deployment and execution of large language models (LLMs) locally on personal computing devices, designed to optimize resource utilization and provide standardized interfaces for model management, inference, and integration with agent-based systems.</p>
+<h4 id="private-knowledge">Private Knowledge</h4>
+<h4 id="public-knowledge">Public Knowledge</h4>
 <h4 id="react-framework">ReAct framework</h4>
 <p>The use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner.  This interleaving provides better results than separated workflows.</p>
 <p>Reasoning traces help the model induce, track, and update action plans as well as handle exceptions, while actions allow it to interface with external sources, such as knowledge bases or environments, to gather additional information. </p>
@@ -1014,6 +1083,8 @@ the goal of creating a small efficient way to build agents</p>
       <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../js/extra.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
