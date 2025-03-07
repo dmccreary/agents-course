@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://dmccreary.github.io/agents-course/glossary/">
       
       
-        <link rel="prev" href="../concepts/react-framework/">
+        <link rel="prev" href="../concepts/deepseek-r1/">
       
       
         <link rel="next" href="../how-we-built-this-site/">
@@ -357,6 +357,12 @@
         
       
         
+          
+        
+      
+        
+      
+        
       
         
       
@@ -445,9 +451,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ai-agents" class="md-nav__link">
+  <a href="#agent" class="md-nav__link">
     <span class="md-ellipsis">
-      AI Agents
+      Agent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#llm-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      LLM Agents
     </span>
   </a>
   
@@ -466,6 +481,15 @@
   <a href="#iso-definition" class="md-nav__link">
     <span class="md-ellipsis">
       ISO Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#knowledge-representation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Knowledge Representation
     </span>
   </a>
   
@@ -502,6 +526,15 @@
   <a href="#react-framework" class="md-nav__link">
     <span class="md-ellipsis">
       ReAct framework
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rules-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rules Engine
     </span>
   </a>
   
@@ -620,9 +653,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ai-agents" class="md-nav__link">
+  <a href="#agent" class="md-nav__link">
     <span class="md-ellipsis">
-      AI Agents
+      Agent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#llm-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      LLM Agents
     </span>
   </a>
   
@@ -641,6 +683,15 @@
   <a href="#iso-definition" class="md-nav__link">
     <span class="md-ellipsis">
       ISO Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#knowledge-representation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Knowledge Representation
     </span>
   </a>
   
@@ -677,6 +728,15 @@
   <a href="#react-framework" class="md-nav__link">
     <span class="md-ellipsis">
       ReAct framework
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rules-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rules Engine
     </span>
   </a>
   
@@ -724,8 +784,15 @@
 
 
 <h1 id="glossary-of-terms">Glossary of Terms</h1>
-<h4 id="ai-agents">AI Agents</h4>
-<p>AI Agents are programs where LLM outputs control the workflow.</p>
+<h4 id="agent">Agent</h4>
+<p>An autonomous computational entity that performs tasks on behalf of users or other programs with some degree of independence or autonomy, and in doing so, employs a precise <a href="#knowledge-representation">knowledge representation</a> of the user's goals or desires.</p>
+<p>Agents are similar to the use of complex <a href="#rules-engine">rules engines</a> but they have a higher degree of independence or autonomy.</p>
+<ul>
+<li>See also: <a href="#rules-engine">Rules Engine</a></li>
+</ul>
+<h4 id="llm-agents">LLM Agents</h4>
+<p>A specialized type of software <a href="#agent">agent</a> where LLM outputs control the workflow.</p>
+<p>Note that "agency" evolves on a continuous spectrum, as you give more or less power to the LLM on your workflow.</p>
 <h4 id="deepseek-r1">DeepSeek R1</h4>
 <h4 id="iso-definition">ISO Definition</h4>
 <p>A term definition is considered to be consistent with ISO metadata registry guideline 11179 if it meets the following criteria:</p>
@@ -736,6 +803,25 @@
 <li>Non-circular</li>
 <li>Unencumbered with business rules</li>
 </ol>
+<h4 id="knowledge-representation">Knowledge Representation</h4>
+<p>The methods and structures used to encode information about the world.</p>
+<p>In this book, we focus on knowledge representation in a form that an agent can utilize for reasoning and decision-making. It provides the foundation for an agent's understanding of its environment, goals, and possible actions.</p>
+<p>Knowledge representation encompasses:</p>
+<ol>
+<li>
+<p><strong>Symbolic Structures</strong>: Formalized frameworks such as ontologies, semantic networks, frames, rules, or logic-based systems that capture entities, relationships, and constraints in the agent's domain.</p>
+</li>
+<li>
+<p><strong>Information Organization</strong>: Methods for structuring knowledge in ways that facilitate efficient access, inference, and updates as the agent interacts with its environment.</p>
+</li>
+<li>
+<p><strong>Reasoning Mechanisms</strong>: Techniques that allow agents to derive new knowledge from existing representations, evaluate truth values, and make decisions based on incomplete information.</p>
+</li>
+<li>
+<p><strong>Semantic Grounding</strong>: Connections between abstract symbols and their real-world referents, allowing the agent to map internal representations to external phenomena.</p>
+</li>
+</ol>
+<p>Effective knowledge representation systems in agents balance expressiveness (the ability to represent complex knowledge) with computational efficiency (allowing the agent to reason within reasonable time and resource constraints).</p>
 <h4 id="large-language-model">Large Language Model</h4>
 <h4 id="llm-agent-control-levels">LLM Agent Control Levels</h4>
 <p>The amount you allow an LLM to control agentic execution.
@@ -757,6 +843,17 @@ Level 5 - LLMs can generate new code and run it</p>
 <ul>
 <li><a href="https://arxiv.org/abs/2210.03629">ReAct: Synergizing Reasoning and Acting in Language Models</a> - March 2023</li>
 </ul>
+<h4 id="rules-engine">Rules Engine</h4>
+<p>A software system that manages and executes a set of business rules in a runtime production environment. </p>
+<p>Rules engines separate business logic from application code by allowing rules to be defined, stored, and managed independently. Rules engines evaluate conditions against input data and execute corresponding actions when conditions are met, enabling non-technical users to modify business logic without changing the underlying application code.</p>
+<p>Key components typically include:</p>
+<ol>
+<li>A rule repository for storing and managing business rules</li>
+<li>A rule authoring interface for creating and modifying rules</li>
+<li>A rule execution engine that evaluates conditions and triggers actions</li>
+<li>Working memory that holds the data being evaluated against the rules</li>
+</ol>
+<p>Rules engines are commonly used in complex decision-making systems, regulatory compliance, fraud detection, pricing strategies, and other scenarios where business logic frequently changes or requires transparency.</p>
 <h4 id="smolagents">SmolAgents</h4>
 <p>An agent framework released by HuggingFace in December of 2024 with
 the goal of creating a small efficient way to build agents</p>
@@ -804,7 +901,7 @@ the goal of creating a small efficient way to build agents</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../concepts/react-framework/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ReAct Framework">
+          <a href="../concepts/deepseek-r1/" class="md-footer__link md-footer__link--prev" aria-label="Previous: DeepSeek R1">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -814,7 +911,7 @@ the goal of creating a small efficient way to build agents</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                ReAct Framework
+                DeepSeek R1
               </div>
             </div>
           </a>
