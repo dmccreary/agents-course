@@ -19,6 +19,7 @@ nav:
   - Concepts:
     - Introduction: concepts/index.md
     - Code Agents: concepts/code-agents.md
+    - ReAct Framework: concepts/react-framework.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md
