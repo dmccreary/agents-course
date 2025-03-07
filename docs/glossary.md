@@ -8,6 +8,12 @@ Agents are similar to the use of complex [rules engines](#rules-engine) but they
 
 * See also: [Rules Engine](#rules-engine)
 
+#### Intelligent Textbook
+
+Any textbook that uses AI an machine learning to create a better learning experience for students.
+
+Intelligent textbooks are rated in [levels 1-5](https://dmccreary.medium.com/five-levels-of-intelligent-textbooks-b81a4c1525a0).
+
 #### LLM Agents
 
 A specialized type of software [agent](#agent) where LLM outputs control the workflow.
