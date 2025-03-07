@@ -63,12 +63,17 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - attr_list
+  - abbr
+  - md_in_html
   - pymdownx.highlight:
       linenums: true
+  - pymdownx.arithmatex:
+      generic: true
 extra_css:
-   - css/extra.css
+  - css/extra.css
 extra_javascript:
-   - js/extra.js
+  - js/extra.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 #extra:
 #  analytics:
 #    provider: google

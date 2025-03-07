@@ -1,6 +1,6 @@
 # Knowledge Representation
 
-The methods and structures used to encode information about the world.
+Knowledge Representation are the methods and structures used to encode information about the world.
 
 In this book, we focus on knowledge representation in a form that an agent can utilize for reasoning and decision-making. It provides the foundation for an agent's understanding of its environment, goals, and possible actions.
 
@@ -15,3 +15,6 @@ Knowledge representation encompasses:
 4. **Semantic Grounding**: Connections between abstract symbols and their real-world referents, allowing the agent to map internal representations to external phenomena.
 
 Effective knowledge representation systems in agents balance expressiveness (the ability to represent complex knowledge) with computational efficiency (allowing the agent to reason within reasonable time and resource constraints).
+
+## Public vs Private Knowledge
+

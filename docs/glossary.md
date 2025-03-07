@@ -44,6 +44,24 @@ Knowledge representation encompasses:
 
 Effective knowledge representation systems in agents balance expressiveness (the ability to represent complex knowledge) with computational efficiency (allowing the agent to reason within reasonable time and resource constraints).
 
+#### LangChain
+
+An open-source framework designed to simplify the development of applications that leverage large language models (LLMs). 
+
+LangChain provides a standardized interface for chaining together different components needed for LLM applications, such as prompt templates, language models, memory systems, and external tools or data sources.
+
+Key features of LangChain include:
+
+1.  **Chains**: Sequences of operations that combine prompts, models, and other components to perform complex tasks.
+2.  **Agents**: Systems that use LLMs as reasoning engines to determine which actions to take based on user input and tool feedback.
+3.  **Memory**: Components that allow applications to maintain conversational state and context over interactions.
+4.  **Retrieval Augmented Generation (RAG)**: Tools for connecting LLMs to external knowledge sources and databases to enhance responses with specific information.
+5.  **Tool integration**: Standardized methods for connecting LLMs to external APIs, databases, and computational resources.
+
+LangChain helps developers build sophisticated applications like chatbots, question-answering systems, summarization tools, and other AI assistants by providing reusable components and patterns that work across different LLM providers.
+
+The main disadvantage of LangChain is a long learning curve.  To use LangChain you must master several abstractions.
+
 #### Large Language Model
 
 #### LLM Agent Control Levels
@@ -51,18 +69,22 @@ Effective knowledge representation systems in agents balance expressiveness (the
 The amount you allow an LLM to control agentic execution.
 Her are some sample levels:
 
-Level 0 - LLMs have no control
-Level 1 - LLMs can impact an if/then/else decision
-Level 2 - LLMs determine what functions should be called
-Level 3 - LLMs control iteration, and program order and continuation
-Level 4 - LLMs can start another agentic workflow
-Level 5 - LLMs can generate new code and run it
+1. **Level 0** - LLMs have no control over workflows
+2. **Level 1** - LLMs can impact an if/then/else decision within workflows
+3. **Level 2** - LLMs determine what functions should be called
+4. **Level 3** - LLMs control iteration, and program order and continuation
+5. **Level 4** - LLMs can start another agentic workflow
+6. **Level 5** - LLMs can generate new code and run it
 
-* See also: [HuggingFace Agent Definition](https://huggingface.co/docs/smolagents/conceptual_guides/intro_agents)
+See also: [HuggingFace Agent Definition](https://huggingface.co/docs/smolagents/conceptual_guides/intro_agents)
 
 #### Ollama
 
 A software framework that enables deployment and execution of large language models (LLMs) locally on personal computing devices, designed to optimize resource utilization and provide standardized interfaces for model management, inference, and integration with agent-based systems.
+
+#### Private Knowledge
+
+#### Public Knowledge
 
 #### ReAct framework
 
