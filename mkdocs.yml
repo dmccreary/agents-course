@@ -18,10 +18,13 @@ nav:
     - Ollama Setup: getting-started/ollama-setup.md
   - Concepts:
     - Introduction: concepts/index.md
+    - Agents: concepts/agents.md
+    - Knowledge Representation: concepts/knowledge-representation.md
     - Workflows: concepts/workflows/index.md
     - Code Agents: concepts/code-agents.md
     - ReAct Framework: concepts/react-framework.md
     - DeepSeek R1: concepts/deepseek-r1.md
+                 - concepts/agents.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md
