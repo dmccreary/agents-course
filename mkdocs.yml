@@ -16,6 +16,9 @@ nav:
     - Conda Setup: getting-started/conda-setup.md
     - Testing Libraries: getting-started/testing-libraries.md
     - Ollama Setup: getting-started/ollama-setup.md
+    - Installing SmolAgents: getting-started/install-smolagents.md
+    - Ollama Python: getting-started/ollama-python.md
+    - SmolAgents with Ollama: getting-started/smolagents-ollama.md
   - Concepts:
     - Introduction: concepts/index.md
     - Agents: concepts/agents.md
@@ -24,9 +27,10 @@ nav:
     - Code Agents: concepts/code-agents.md
     - ReAct Framework: concepts/react-framework.md
     - DeepSeek R1: concepts/deepseek-r1.md
-                 - concepts/agents.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
+  - Feedback: feedback.md
+  - License: license.md
   - References: references.md
   - Contact: contact.md
  
