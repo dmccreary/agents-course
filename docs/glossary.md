@@ -1,5 +1,13 @@
 # Glossary of Terms
 
+#### Action
+
+The process of calling a specific tool directly from within an agent.
+
+In a multi-step agent, at each step, the LLM can write an action, in the form of some calls to external tools.  Tools much be carefully described so that agents can match their capabilities with the needs of a the user.
+
+A common format (used by Anthropic, OpenAI, and many others) for writing these actions is generally different variations of "writing actions as a JSON of tools names, description and arguments to use, which you then parse to know which tool to execute and with which arguments".
+
 #### Agent
 
 An autonomous computational entity that performs tasks on behalf of users or other programs with some degree of independence or autonomy, and in doing so, employs a precise [knowledge representation](#knowledge-representation) of the user's goals or desires.
@@ -8,17 +16,16 @@ Agents are similar to the use of complex [rules engines](#rules-engine) but they
 
 * See also: [Rules Engine](#rules-engine)
 
-#### Intelligent Textbook
+#### Agntcy
 
-Any textbook that uses AI an machine learning to create a better learning experience for students.
+A set of proposed standards for Agent interoperability.
 
-Intelligent textbooks are rated in [levels 1-5](https://dmccreary.medium.com/five-levels-of-intelligent-textbooks-b81a4c1525a0).
+* See [Agntcy on Perplexity](https://www.perplexity.ai/search/agntcy-c.tl7VIyRK.c2F.27VxeCg)
 
-#### LLM Agents
+#### Business Process Modeling Notation
 
-A specialized type of software [agent](#agent) where LLM outputs control the workflow.
+[BPMN References Guide](https://camunda.com/bpmn/reference/)
 
-Note that "agency" evolves on a continuous spectrum, as you give more or less power to the LLM on your workflow.
 
 #### DeepSeek R1
 
@@ -31,6 +38,48 @@ A term definition is considered to be consistent with ISO metadata registry guid
 3. Distinct
 4. Non-circular
 5. Unencumbered with business rules
+
+#### Docstring
+
+# Python Docstring with @tool Annotation
+
+A docstring in Python is a string literal that appears as the first statement in a module, function, class, or method definition. It is used to document the purpose, behavior, parameters, and return values of the code object. Python docstrings are enclosed by triple quotes (`"""` or `'''`) and can span multiple lines.
+
+When working with AI agents (particularly in frameworks like LangChain or SmoLAgents), the `@tool` annotation in a docstring is a special decorator or marker that designates a function as being callable by an agent. This process typically works as follows:
+
+1. **Function Definition**: Create a Python function with clearly defined inputs and outputs.
+
+2. **Docstring Documentation**: Write a comprehensive docstring that describes:
+   - What the function does
+   - The parameters it accepts
+   - The return value and type
+   - Any exceptions it might raise
+
+3. **@tool Annotation**: Include the `@tool` marker within the docstring or as a decorator above the function definition.
+
+4. **Registration**: The function is automatically registered in the agent's available toolset.
+
+5. **Discovery and Usage**: When the agent needs to perform a task related to the function's capability, it can discover and call this function based on the description in the docstring.
+
+Example:
+```python
+def search_database(query: str) -> list:
+    """
+    @tool
+    Search the database for information matching the query string.
+    
+    Args:
+        query: The search term to look for in the database
+        
+    Returns:
+        A list of matching records from the database
+    """
+    # Implementation details
+    results = db.execute_search(query)
+    return results
+```
+
+This approach allows agents to understand not just what functions are available, but when and how to use them appropriately based on their documented purpose and parameters.
 
 #### Knowledge Representation
 
@@ -70,6 +119,16 @@ The main disadvantage of LangChain is a long learning curve.  To use LangChain y
 
 #### Large Language Model
 
+A deep learning model that is trained on natural language and used to predict the next token.
+
+Examples of LLMs include BERT, DeepSeek, GPTs and Llams.
+
+#### LLM Agents
+
+A specialized type of software [agent](#agent) where LLM outputs control the workflow.
+
+Note that "agency" evolves on a continuous spectrum, as you give more or less power to the LLM on your workflow.
+
 #### LLM Agent Control Levels
 
 The amount you allow an LLM to control agentic execution.
@@ -90,7 +149,28 @@ A software framework that enables deployment and execution of large language mod
 
 #### Private Knowledge
 
+Knowledge that is not publicly available.
+
+ For organizations, private knowledge usually is stored on an intranet or private company databases such as ERP and CRM systems.
+
+Software Agents must combine both public knowledge (usually within a LLM) with private knowledge.
+
+## Procedural Code
+
+Procedural code is a programming paradigm that focuses on defining a sequence of operations for a computer to execute.
+
+It emphasizes how a program should accomplish tasks through explicit step-by-step instructions, control flow structures, and state changes. Procedural code typically organizes functionality into procedures or functions that are called in a predetermined order.
+
+Procedural code is contracted with declarative code and agentic code.
+
 #### Public Knowledge
+
+Knowledge that is openly available on public data sources such as the Internet and Wikipedia.
+
+Public knowledge is contrasted to [private knowledge](#private-knowledge) that has limited access.  For organizations, private knowledge usually is stored on an intranet or private company databases such as ERP and CRM systems.
+
+Software Agents must combine both public knowledge (usually within a LLM) with private knowledge.
+
 
 #### ReAct framework
 
@@ -124,6 +204,12 @@ the goal of creating a small efficient way to build agents
 
 #### Tool Calling
 
-Letting an LLM call a function.
+Letting an LLM call a specific function usually with specific patterns.
 
 **Example:** Let an LLM call a function to get similar text to a question from a knowledge base.
+
+#### Tool Catalog
+
+A list of the tools available for an agent to use.  Each tool must be described by a name, description and list of parameters and their possible data types and enumerated values.
+
+In this course, the definition of Python functions that can be used by agents must have a [Docstring](#docstring) with the `@tool` annotation.
