@@ -26,6 +26,12 @@ A set of proposed standards for Agent interoperability.
 
 [BPMN References Guide](https://camunda.com/bpmn/reference/)
 
+#### Decorator
+A decorator is a design pattern implemented as a special syntax that allows a function, method, or class to be modified or extended without changing its source code. 
+
+In this course, we use Python decorators with the @ symbol followed by a decorator name such as `@tool`  placed above the definition of the function to be decorated. 
+
+They effectively wrap the target function, enabling pre-processing of arguments, post-processing of return values, modification of behavior, or registration within a larger system.
 
 #### DeepSeek R1
 
@@ -41,45 +47,30 @@ A term definition is considered to be consistent with ISO metadata registry guid
 
 #### Docstring
 
-# Python Docstring with @tool Annotation
+A docstring in Python is a string literal that appears as the first statement in a module, function, class, or method definition.
 
-A docstring in Python is a string literal that appears as the first statement in a module, function, class, or method definition. It is used to document the purpose, behavior, parameters, and return values of the code object. Python docstrings are enclosed by triple quotes (`"""` or `'''`) and can span multiple lines.
+Python docstrings are enclosed by triple quotes (`"""` or `'''`) and can span multiple lines.
 
-When working with AI agents (particularly in frameworks like LangChain or SmoLAgents), the `@tool` annotation in a docstring is a special decorator or marker that designates a function as being callable by an agent. This process typically works as follows:
-
-1. **Function Definition**: Create a Python function with clearly defined inputs and outputs.
-
-2. **Docstring Documentation**: Write a comprehensive docstring that describes:
-   - What the function does
-   - The parameters it accepts
-   - The return value and type
-   - Any exceptions it might raise
-
-3. **@tool Annotation**: Include the `@tool` marker within the docstring or as a decorator above the function definition.
-
-4. **Registration**: The function is automatically registered in the agent's available toolset.
-
-5. **Discovery and Usage**: When the agent needs to perform a task related to the function's capability, it can discover and call this function based on the description in the docstring.
-
-Example:
-```python
-def search_database(query: str) -> list:
-    """
-    @tool
-    Search the database for information matching the query string.
-    
-    Args:
-        query: The search term to look for in the database
-        
-    Returns:
-        A list of matching records from the database
-    """
-    # Implementation details
-    results = db.execute_search(query)
-    return results
-```
+Docstrings combined with the `@tool` decorator are used to document the purpose, behavior, parameters, and return values of the code object. 
 
 This approach allows agents to understand not just what functions are available, but when and how to use them appropriately based on their documented purpose and parameters.
+
+#### Goal-Driven Process (GDP)
+
+In the context of the Software Development Life Cycle (SDLC), GDP typically refers to "Goal-Driven Process" or "Goal-Directed Planning." This is a methodological approach within software development that emphasizes:
+
+Defining clear goals and objectives for the software project
+Aligning development processes with these established goals
+Making decisions throughout the development lifecycle based on how they contribute to achieving the defined goals
+
+The GDP approach within SDLC helps teams:
+
+- Maintain focus on delivering value that aligns with business or user objectives
+- Prioritize features and development tasks based on goal contribution
+- Establish measurable criteria for evaluating progress and success
+- Create a framework for making consistent decisions when trade-offs are necessary
+
+This approach can be implemented across various SDLC methodologies, including Agile, Waterfall, or hybrid approaches, as it's more about the strategic alignment of development efforts rather than the specific technical implementation process.
 
 #### Knowledge Representation
 
@@ -101,7 +92,7 @@ Effective knowledge representation systems in agents balance expressiveness (the
 
 #### LangChain
 
-An open-source framework designed to simplify the development of applications that leverage large language models (LLMs). 
+An open-source framework designed to simplify the development of applications that leverages large language models (LLMs). 
 
 LangChain provides a standardized interface for chaining together different components needed for LLM applications, such as prompt templates, language models, memory systems, and external tools or data sources.
 
@@ -142,6 +133,13 @@ Her are some sample levels:
 6. **Level 5** - LLMs can generate new code and run it
 
 See also: [HuggingFace Agent Definition](https://huggingface.co/docs/smolagents/conceptual_guides/intro_agents)
+
+#### Model Context Protocol (MCP)
+
+An open protocol that standardizes how applications provide context to LLMs. Think of MCP like a USB-C port for AI applications. Just as USB-C provides a standardized way to connect your devices to various peripherals and accessories, MCP provides a standardized way to connect AI models to different data sources and tools.
+
+- [Model Context Protocol](https://modelcontextprotocol.io/introduction)
+- [Cursor Model Content Protocol](https://docs.cursor.com/context/model-context-protocol)
 
 #### Ollama
 
@@ -202,11 +200,29 @@ the goal of creating a small efficient way to build agents
 
 * [HuggingFace SmolAgents Docs](https://huggingface.co/docs/smolagents/index)
 
+#### Tool
+
+An atomic function used by an agent. 
+
+To be used by an LLM, tools needs a few attributes that constitute its API and will be used to describe to the LLM how to call this tool.  Here  are the four key attributes a tool needs:
+
+1. A tool name - this is usually the name of a python function
+2. A description - this comes from the Python Docstring
+3. Input parameter names, types and descriptions which include descriptions of enumerated values
+4. An output format including types and how errors are returned
+
+* See also: [Docstring](#docstring)
+* See also: [Decorator](#decorator)
+
 #### Tool Calling
 
 Letting an LLM call a specific function usually with specific patterns.
 
 **Example:** Let an LLM call a function to get similar text to a question from a knowledge base.
+
+* See also: [Tool](#tool)
+* See also: [Docstring](#docstring)
+* See also: [Decorator](#decorator)
 
 #### Tool Catalog
 

@@ -4,6 +4,10 @@
 
 * [Agntcy on Perplexity](https://www.perplexity.ai/search/agntcy-c.tl7VIyRK.c2F.27VxeCg)
 
+## Knowledge
+
+[Deloitte Whitepaper: Knowledge Enriched Agentic Workflows](file:///Users/danmccreary/Downloads/deloitte-nl-knowledge-enriched-agent-ai-workflows.pdf)
+
 ## Key Tutorials
 
 ## 
