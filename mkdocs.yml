@@ -30,7 +30,7 @@ nav:
     - Code Agents: concepts/code-agents.md
     - ReAct Framework: concepts/react-framework.md
     - DeepSeek R1: concepts/deepseek-r1.md
-
+    - Project Rules: concepts/project-rules.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - Feedback: feedback.md

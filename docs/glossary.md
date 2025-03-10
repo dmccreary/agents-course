@@ -86,6 +86,14 @@ In the context of intelligent software agents, GPUs are relevant as they provide
 
 **Example:** When deploying a code agent for real-time coding tasks, a developer would typically configure the environment to utilize a GPU to ensure the agent can perform inference operations at sufficient speed, rather than relying solely on CPU processing.
 
+#### Intelligent Textbook
+
+An interactive digital learning resource that employs artificial intelligence to generate personalized educational content and adaptive learning experiences in response to individual student needs and progress.
+
+In the context of intelligent software agents, intelligent textbooks represent an advanced application domain where multiple specialized agents collaborate to deliver customized educational experiences. These agents work together to analyze student performance, identify knowledge gaps, generate appropriate lesson content, create interactive simulations, and adapt teaching methodologies in real-time. The intelligent textbook serves as both a platform for agent integration and an interface through which students interact with these educational AI systems.
+
+**Example:** A computer science student using an intelligent textbook to learn about data structures might receive dynamically generated lesson content on binary trees based on their previous interaction patterns, followed by an interactive coding simulation that adjusts its complexity based on the student's demonstrated proficiency, all orchestrated by specialized AI agents working in concert to optimize the learning experience.
+
 #### Integrated Development Environment
 
 A software application that provides comprehensive facilities to programmers for software development, combining multiple development tools into a single graphical user interface.
