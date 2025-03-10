@@ -35,6 +35,12 @@ They effectively wrap the target function, enabling pre-processing of arguments,
 
 #### DeepSeek R1
 
+A [large language model](#large-language-model) developed in China that uses an innovative architecture that combines mixture of experts with reinforcement learning to create smaller models at lower cost.
+
+In this course we use a 7 billion parameter variant of DeepSeek R1 created by the [Ollama](#ollama) system that runs on a local GPU with only 12GB RAM but still generates over 50 tokens per second.
+
+- See Also [DeepSeek R1 in Concepts](concepts/deepseek-r1.md)
+
 #### ISO Definition
 
 A term definition is considered to be consistent with ISO metadata registry guideline 11179 if it meets the following criteria:
@@ -71,6 +77,26 @@ The GDP approach within SDLC helps teams:
 - Create a framework for making consistent decisions when trade-offs are necessary
 
 This approach can be implemented across various SDLC methodologies, including Agile, Waterfall, or hybrid approaches, as it's more about the strategic alignment of development efforts rather than the specific technical implementation process.
+
+#### Graphics Processing Unit
+
+A specialized device designed to accelerate matrix operations using parallel processing.
+
+In the context of intelligent software agents, GPUs are relevant as they provide parallel processing capabilities that significantly accelerate machine learning model training and inference operations, enabling more complex and performant AI systems. The parallel architecture of GPUs allows for efficient matrix operations that form the computational backbone of many neural network implementations.
+
+**Example:** When deploying a code agent for real-time coding tasks, a developer would typically configure the environment to utilize a GPU to ensure the agent can perform inference operations at sufficient speed, rather than relying solely on CPU processing.
+
+#### Integrated Development Environment
+
+A software application that provides comprehensive facilities to programmers for software development, combining multiple development tools into a single graphical user interface.
+
+In the context of intelligent software agents, IDEs are relevant as they provide environments where code agents can be integrated to assist developers with tasks such as code completion, error detection, refactoring suggestions, and automated documentation. Modern IDEs often incorporate AI-powered features that enhance developer productivity by leveraging language models to understand code context and provide intelligent assistance.
+
+**Example:** A developer working with a code agent might configure their IDE to seamlessly interact with the agent, allowing it to analyze code as it's being written, suggest improvements based on best practices, and even generate test cases automatically based on the function implementations.
+
+* [Codium Windsurf](https://codeium.com/windsurf)
+* [Lovable](https://lovable.dev/)
+* [Cursor](https://www.cursor.com/en)
 
 #### Knowledge Representation
 
@@ -145,6 +171,8 @@ An open protocol that standardizes how applications provide context to LLMs. Thi
 
 A software framework that enables deployment and execution of large language models (LLMs) locally on personal computing devices, designed to optimize resource utilization and provide standardized interfaces for model management, inference, and integration with agent-based systems.
 
+We use Ollama in this course to enable us to run LLMs on a local GPU.
+
 #### Private Knowledge
 
 Knowledge that is not publicly available.
@@ -153,7 +181,7 @@ Knowledge that is not publicly available.
 
 Software Agents must combine both public knowledge (usually within a LLM) with private knowledge.
 
-## Procedural Code
+#### Procedural Code
 
 Procedural code is a programming paradigm that focuses on defining a sequence of operations for a computer to execute.
 
