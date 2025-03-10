@@ -168,9 +168,14 @@ Her are some sample levels:
 
 See also: [HuggingFace Agent Definition](https://huggingface.co/docs/smolagents/conceptual_guides/intro_agents)
 
-#### Model Context Protocol (MCP)
+#### Model Context Protocol
 
-An open protocol that standardizes how applications provide context to LLMs. Think of MCP like a USB-C port for AI applications. Just as USB-C provides a standardized way to connect your devices to various peripherals and accessories, MCP provides a standardized way to connect AI models to different data sources and tools.
+An open protocol and standardized set of rules and data structures that govern the exchange of contextual information between an application programming interface (API) and a large language model (LLM).
+
+The Model Context Protocol (MCP) defines how prompts, system instructions, session states, user interactions, and relevant contextual metadata are structured, transmitted, and maintained to ensure consistent and coherent model behavior across interactions.
+
+Example:
+In an AI chatbot API, a Model Context Protocol may define how user messages, past conversation history, user preferences, and domain-specific knowledge are encoded and sent to the LLM, ensuring that responses remain relevant and contextually aware.
 
 - [Model Context Protocol](https://modelcontextprotocol.io/introduction)
 - [Cursor Model Content Protocol](https://docs.cursor.com/context/model-context-protocol)
