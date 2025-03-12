@@ -210,6 +210,13 @@ Public knowledge is contrasted to [private knowledge](#private-knowledge) that h
 
 Software Agents must combine both public knowledge (usually within a LLM) with private knowledge.
 
+#### PydanticAI
+
+A Python agent framework designed to make it easy to build production grade applications with Generative AI.
+
+PydanticAI is a reaction to overly abstract frameworks such as LangChain that have long learning curves to manage the abstractions.
+
+- See also [PydanticAI Web Site](https://ai.pydantic.dev/)
 
 #### ReAct framework
 
