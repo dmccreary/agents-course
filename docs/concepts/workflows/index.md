@@ -27,4 +27,14 @@ to the question in your prompt.
 ![](./knowledge-graph.png)
 
 - In this workflow we replace the generic knowledge based with a knowledge graph that has similarity indexes on reinvent components
-- Knowledge graphs store models of the real world with better precision than tabular data such as CSV files or flat files with per-query relational JOIN operations 
+- Knowledge graphs store models of the real world with better precision than tabular data such as CSV files or flat files with per-query relational JOIN operations
+
+## Matching a Developer Request to a Developer Tool
+
+![](developer-tool.png)
+
+## Matching a Developer Request to a Workflow
+
+![](./workflow-matcher.png)
+
+Remember that workflows are graphs!
