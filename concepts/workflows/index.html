@@ -637,6 +637,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#the-role-of-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Role of Context
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-reasoning-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Reasoning Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -937,6 +964,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#the-role-of-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Role of Context
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-reasoning-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Reasoning Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -986,10 +1040,24 @@ to the question in your prompt.</li>
 <li>Knowledge graphs store models of the real world with better precision than tabular data such as CSV files or flat files with per-query relational JOIN operations</li>
 </ul>
 <h2 id="matching-a-developer-request-to-a-developer-tool">Matching a Developer Request to a Developer Tool</h2>
+<p>If you are a software developer and you want an agent to help
+you the first task is to match your prompt to a tool.  So for example your prompt might be: "move these new files into the sims folder".  That would required the agent to use the unix "mv" command to move the files.</p>
 <p><img alt="" src="developer-tool.png" /></p>
+<p>The bottom row of the workflow above is a list of all the tools that the IDE agent knows how to use and how to call them with the right parameters.</p>
 <h2 id="matching-a-developer-request-to-a-workflow">Matching a Developer Request to a Workflow</h2>
+<p>We can take this matching process one step further to
+not just match a single tool, but a set of tools executing in a specific order.  For example you might need to first create a new directory and then move the files into that new directory.</p>
 <p><img alt="" src="workflow-matcher.png" /></p>
-<p>Remember that workflows are graphs!</p>
+<p>Each of these "actions" will match not with a single command, but with a complex workflow of operations that can be executed and then tested for correctness.</p>
+<p>Remember that workflows are graphs!  So what we are really doing is finding the nearness of a prompt to a region of the graph that has similar values in a vector store.</p>
+<h2 id="the-role-of-context">The Role of Context</h2>
+<p>The primary use of the knowledge graph is to analyze the current state of a task and then bring in the right sections of the knowledge graph that are relevant to the contest.</p>
+<p>We know that LLMs pay "attention" to the words around the last token in a sequence to predict the next token.  We need to apply the same attention systems to finding out what parts of the model of our world, the knowledge graph, is relevant to our task.</p>
+<p>We also need some way of measuring conceptual distance and knowing that we don't have ANY match and inform the user that no appropriate tools have been found.</p>
+<h2 id="the-reasoning-model">The Reasoning Model</h2>
+<p>The way that we match these prompts to tools can be thought of as being done in steps.  The first step is to come up with a plan of action.  The second step is to execute those actions.</p>
+<h2 id="summary">Summary</h2>
+<p>One of the best ways to summarize this is that agents work with LLMs and tools to match prompts to regions of a knowledge graph.  Once a plan is created it can be executed and the result of that execution can be tested.  After the test pass we consider the workflow complete.</p>
 
 
 
