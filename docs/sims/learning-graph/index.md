@@ -1,5 +1,5 @@
-# MicroSims for Learning Intelligent Agents
+# Learning Graph
 
-## Learning Graph
+## Learning Graph for Intelligent Agents
 
-[](./)
+[Run the Learning Graph MicroSim](./graph-viewer.html)

@@ -1,5 +1,21 @@
 # Concept Taxonomy
 
+## From Prior Step:
+
+### Concept Clusters:
+The dependencies reveal several natural clusters of related concepts:
+
+### Concept Clusters:
+
+The dependencies reveal several natural clusters of related concepts:
+
+1.  **Programming Fundamentals**: Python, data types, structures, docstrings
+2.  **Agent Theory**: Software agents, agency levels, autonomy
+3.  **Knowledge Representation**: Knowledge graphs, ontologies, semantic networks
+4.  **Tool Engineering**: Tool calling, catalogs, documentation
+5.  **LLM Implementation**: Model architectures, inference, deployment
+6.  **Agent Development**: Frameworks, integration, deployment strategies
+
 !!! prompt
     Your observation of concept clusters is excellent.  I would like to color-code the concepts when they are displayed on the network graph.  Can you suggest four other clusters of related concepts we can use to show the concept types?
 
@@ -71,3 +87,39 @@ When implementing this color-coding in your network graph:
 4. **Highlight cross-cluster connections** - Edge connections between different clusters could be emphasized to show interdisciplinary connections
 
 These additional clusters, combined with your original clusters, provide a comprehensive categorization scheme that covers the major conceptual areas of the course. This visualization approach will help students see the relationships between different concept types and understand how knowledge in one area supports development in others.
+
+## Concept Taxonomy for Intelligent Software Agents Course
+
+Here's a summary of the 10 concept classifiers with their definitions:
+
+### 1. Programming Fundamentals
+Concepts related to core programming skills, languages, and data handling that form the technical foundation for agent development. This includes Python programming, data structures, function definitions, and exception handling.
+
+### 2. Agent Theory
+Theoretical concepts describing the nature, capabilities, and classification of software agents. This covers agency levels, autonomy, computational entities, and the spectrum of agent capabilities from basic to advanced.
+
+### 3. Knowledge Representation
+Concepts focused on how information is structured, stored, and made accessible to agents. This includes ontologies, semantic networks, frames, and the trade-offs between different representation approaches.
+
+### 4. Tool Engineering
+Concepts related to creating, documenting, and managing the functions that agents can call to interact with external systems. This covers tool design, documentation standards, naming conventions, and APIs.
+
+### 5. LLM Implementation
+Technical concepts specific to large language models, their architecture, deployment, and operation. This includes model types, inference techniques, context management, and transformer architecture.
+
+### 6. Security & Safety Framework
+Concepts focused on ensuring agent systems operate responsibly and securely. This includes sandboxed environments, controlled imports, error handling, and validation of agent outputs.
+
+### 7. Performance & Optimization
+Concepts related to improving speed, efficiency, and resource utilization of agent systems. This covers GPU optimization, token generation rates, latency reduction, and computational resource management.
+
+### 8. Knowledge Integration & Reasoning
+Concepts addressing how agents combine information sources and perform logical reasoning. This includes retrieval augmented generation, reasoning mechanisms, knowledge base integration, and inference.
+
+### 9. User Interaction & Experience
+Concepts centered on how agents communicate with and serve users. This includes interface design, natural language understanding, content generation and refinement, and understanding user goals.
+
+### 10. Agent Development
+Practical implementation concepts for building agent systems. This includes agent frameworks, integration patterns, deployment strategies, and specialized implementations like code agents and multi-agent systems.
+
+These classifications provide a comprehensive framework for organizing the 200 concepts in the course, highlighting the multidisciplinary nature of intelligent software agent development spanning from theoretical foundations to practical implementation considerations.

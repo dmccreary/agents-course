@@ -33,6 +33,13 @@ nav:
     - DeepSeek R1: concepts/deepseek-r1.md
     - Project Rules: concepts/project-rules.md
     - PydanticAI: concepts/pydanticai.md
+  - Prompts:
+    - Introduction: prompts/index.md
+    - Concept Dependency: prompts/concept-dependency.md
+    - Concept Enumeration: prompts/concept-enumeration.md
+    - Concept Taxonomy: prompts/concept-taxonomy.md
+    - Concept Classification: prompts/concept-classification.md
+    - Taxonomy Summary: prompts/taxonomy.md
   - MicroSims:
     - Introduction: sims/index.md
     - Learning Graph: sims/learning-graph/index.md
