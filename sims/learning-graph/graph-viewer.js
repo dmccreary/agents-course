@@ -67,38 +67,60 @@ function drawGraph() {
         "found": {
            shape: "box", 
            color:{background:'red'},
-           font: {color: "white"},
+           font: {color: "black"},
         },
-        "term": {
+        "agent-theory": {
            color:{background:'orange'},
+           font: {color: "black"}
         },
-        "stand": {
-           color:{background:'gold'},
+        "knowledge-representation": {
+           color:{background:'yellow'},
+           font: {color: "black"}
         },
-        "ui": {
-           color:{background:'purple'},
-        },
-        "algorithms": {
-           color:{background:'green'},
-        },
-        "similarity": {
-           color:{background:'brown'},
-        },
-        "learning-theory": {
-           color:{background:'green'},
-        },
-        "ai": {
-           color:{background:'pink'},
-        },
-        "feed": {
+       "tools": {
+        color:{background:'light-green'},
+        font: {color: "black"}
+       },
+        "llms": {
+          color:{background:'green'},
+          font: {color: "black"}
+       },
+       "security": {
+          color:{background:'indigo'},
+          font: {color: "black"}
+       },
+       "performance": {
+          color:{background:'violet'},
+          font: {color: "black"}
+       },
+       "reasoning": {
+          color:{background:'brown'},
+          font: {color: "black"}
+       },
+       "tool-engineering": {
+          color:{background:'green'},
+          font: {color: "black"}
+       },      
+       "ui": {
            color:{background:'gray'},
+           font: {color: "black"}
         },
-        "agents": {
-           color:{background:'navy'},
+        "dev": {
+           color:{background:'black'},
+           font: {color: "black"}
+        },
+        "projects": {
+           color:{background:'dark-green'},
+           font: {color: "black"}
+        },
+        "misc": {
+           color:{background:'dark-blue'},
+           font: {color: "black"}
         },
         goal: {
            shape: "star", 
            color:{background:'gold'}, 
+           font: {color: "black"},
            font: { size: 16 }
         }
     }
