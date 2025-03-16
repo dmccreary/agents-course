@@ -2,126 +2,138 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dmccreary.github.io/agents-course/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/about/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/contact/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/agents-course/course-description/</loc>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/feedback/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/glossary/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/how-we-built-this-site/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/license/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/references/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/concepts/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/concepts/agents/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/concepts/background/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/concepts/code-agents/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/concepts/deepseek-r1/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/concepts/docstring/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/concepts/knowledge-representation/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/concepts/project-rules/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/concepts/pydanticai/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/concepts/react-framework/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/concepts/workflows/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/concepts/workflows/types-of-coding/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/getting-started/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/getting-started/conda-setup/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/getting-started/gpu-drivers/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/getting-started/install-smolagents/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/getting-started/ollama-python/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/getting-started/ollama-setup/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/getting-started/picking-agent-library/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/getting-started/smolagents-ollama/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/getting-started/testing-libraries/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/agents-course/sims/</loc>
+         <lastmod>2025-03-16</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/agents-course/sims/learning-graph/</loc>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/tutorials/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/tutorials/pydanticai/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-16</lastmod>
     </url>
 </urlset>
