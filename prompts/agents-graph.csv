@@ -1,0 +1,201 @@
+ConceptID,ConceptLabel,Dependencies,TaxonomyID
+1,Python Programming,,1
+2,Data Types,1,1
+3,Data Structures,1|2,1
+4,Version Control,,1
+5,GitHub,4,1
+6,Integrated Development Environment,,10
+7,Visual Studio Code,6,1
+8,Command Line Interface,,1
+9,Software Agents,1|11|12,2
+10,Agency Levels,9|61,2
+11,Knowledge Representation,,3
+12,Tools,1|43,4
+13,Tool Calling,12|17,4
+14,Tool Catalogs,12|13|29,4
+15,Local Development Environment,7|8|16,10
+16,Ollama,8|17|21,5
+17,Large Language Models,,5
+18,LLM Agents,9|17,2
+19,LLM Agent Control Levels,10|17|18,2
+20,Local LLM Deployment,8|15|16|17,5
+21,DeepSeek R1,16|17,5
+22,Tool Documentation,12|13|14|29,4
+23,Docstring,1|22,4
+24,Decorator,1|22|29,4
+25,Tool Engineering,12|13|14|22|23|24,4
+26,Prompt Engineering,17|19,5
+27,Basic Tool-Calling Agents,12|13|14|18|19,2
+28,Code Agents,1|3|18|19|27,10
+29,Python Functions,1|12,1
+30,Sandboxed Environment,28|34,6
+31,Knowledge Sources,11|18,3
+32,Public Knowledge,31,3
+33,Private Knowledge,31|32,3
+34,Error Handling,1|28,6
+35,Safety Considerations,28|30|34,6
+36,Security Considerations,28|30|35,6
+37,GPU Optimization,16|17|20|21,7
+38,ReAct Framework,18|19|27,8
+39,Retrieval Augmented Generation,17|18|31|32|33,8
+40,Knowledge Base Design,11|31|32|33,3
+41,Semantic Networks,11|40,3
+42,Ontology Design,11|40|41,3
+43,Business Process Modeling,9|10,12
+44,Goal-Driven Process,9|10|19|43,2
+45,Intelligent Textbook,9|17|18|27,9
+46,Graphics Processing Unit,37,7
+47,Code Agent,9|18|19|28,10
+48,Multi-Agent System,9|18|19|47,10
+49,Model Context Protocol,17,5
+50,Token Generation Rate,17|37|46,7
+51,LLM Reasoning,17|18|38,8
+52,Agentic Workflow,10|18|19,2
+53,Procedural Code,1|52,1
+54,Declarative Code,1|53,1
+55,Agentic Code,1|18|19|53|54,2
+56,SmolAgents Framework,18|19|28|47,10
+57,Final Answer Tool,12|13|14|28|47|56,2
+58,LangChain,18|19,10
+59,PydanticAI,18|19,10
+60,Rules Engine,9|10|44,2
+61,Agency,9|10|18|19,2
+62,Autonomous Computational Entity,9|61,2
+63,User Goals,9|62,9
+64,User Desires,9|62|63,9
+65,Function Definition,1|29,1
+66,Knowledge Representation Trade-offs,11|31|40|41|42,3
+67,Tool API Design,12|13|14|22|25,4
+68,Agency Spectrum,9|10|19|61,2
+69,Reasoning and Action Interleaving,18|19|38|51,8
+70,Knowledge Integration,11|31|32|33|39|40,8
+71,Contextual Understanding,17|51|63|64,9
+72,User Input Processing,9|63|64|71,9
+73,Output Generation,9|17|18|71|72,9
+74,Inference Optimization,17|37|46|50,7
+75,Natural Language Understanding,17|71|72,8
+76,Token Efficiency,17|37|46|50|74,7
+77,Model Size Optimization,17|37|46|50|74|76,7
+78,Controlled Imports,28|30|34|35|36,6
+79,Risk Management,28|30|34|35|36|78,6
+80,Exception Handling,1|34,1
+81,Tool Parameter Documentation,22|23|24|25|67,4
+82,Tool Return Value Documentation,22|23|24|25|67|81,4
+83,Tool Catalog Organization,14|22|25|67,4
+84,Tool Selection Logic,13|14|18|19|27|83,4
+85,Tool Execution Flow,13|14|18|19|27|84,4
+86,Interface Design,9|63|64|71|72|73,9
+87,Reasoning Trace,18|19|38|51|69,8
+88,Planning Capabilities,18|19|51|87,8
+89,Implementation Patterns,15|20|28|47|48|56|58|59,10
+90,Agent Frameworks Comparison,56|58|59,10
+91,System Integration,15|20|89|90,10
+92,Deployment Strategies,15|20|89|91,10
+93,External API Integration,12|13|14|67,4
+94,Data Preprocessing,1|3|12|13|14,1
+95,Contextual Memory,17|18|19|51|71,5
+96,Response Generation,17|18|19|51|71|73|95,5
+97,Thread Management,17|95|96,5
+98,Parallel Execution,37|46|74|76|77|97,7
+99,Resource Allocation,37|46|74|76|77|97|98,7
+100,Error Recovery,34|35|79|80,6
+101,Python Libraries,1|3|94,1
+102,Data Visualization,1|94|101,1
+103,User Experience Design,63|64|71|72|73|86,9
+104,Agent Architecture,9|18|19|28|47|48|56|58|59|89|90,10
+105,Context Window Management,17|95|96|97,5
+106,Token Counting,17|50|76|105,5
+107,API Rate Limiting,13|93,7
+108,Cost Optimization,37|46|50|74|76|77|98|99|107,7
+109,Agent Autonomy Levels,10|19|61|62|68,2
+110,Agent Independence,10|19|61|62|68|109,2
+111,Knowledge Acquisition,11|31|32|33|39|40|70,3
+112,Knowledge Retention,11|31|40|70|95|105|111,3
+113,Knowledge Application,11|31|40|70|95|105|111|112,3
+114,Belief-Desire-Intention Model,9|10|19|61|62|63|64,2
+115,Agent Decision-Making,9|10|19|51|61|62|114,2
+116,Prompt Templates,17|26|96,5
+117,Few-Shot Learning,17|26|96|116,5
+118,Chain-of-Thought Prompting,17|26|51|87|96|116|117,5
+119,Local Function Calling,1|12|13|14|29,4
+120,Managed Function Calling,1|12|13|14|29|119,4
+121,Agent Communication Protocols,9|18|19|48,10
+122,Inter-Agent Messaging,9|18|19|48|121,10
+123,Collaborative Problem Solving,9|18|19|48|121|122,10
+124,Emergent Behaviors,9|18|19|48|121|122|123,10
+125,System Monitoring,15|20|34|35|36|91|92,10
+126,Logging Strategies,34|80|125,1
+127,Debugging Techniques,1|34|80|126,1
+128,Performance Benchmarking,37|46|50|74|76|77|98|99|107|108,7
+129,Model Evaluation Metrics,17|37|46|50|74|76|77|128,5
+130,Agent Performance Metrics,9|10|18|19|28|47|48|128|129,10
+131,User Feedback Collection,63|64|71|72|73|86|103,9
+132,Continuous Improvement,89|91|92|125|128|129|130|131,10
+133,Versioning Strategies,4|5|89|91|92,1
+134,Model Fine-Tuning,17|26|116|117|118|129,5
+135,Domain Adaptation,17|26|31|32|33|39|40|70|134,5
+136,Transfer Learning,17|26|134|135,5
+137,Knowledge Distillation,17|134|135|136,5
+138,Model Quantization,17|37|46|50|74|76|77|137,5
+139,Model Pruning,17|37|46|50|74|76|77|137|138,5
+140,Local Model Serving,15|16|20|21|37|46|92,5
+141,Tool Discovery,12|13|14|22|25|67|83|84,4
+142,Automated Tool Selection,12|13|14|18|19|27|83|84|141,4
+143,Dynamic Tool Creation,12|13|14|28|47|141|142,4
+144,Tool Version Compatibility,12|13|14|22|25|67|133,4
+145,Error Feedback Loops,34|35|36|79|80|100,6
+146,Validation Frameworks,34|35|36|79|80|100|145,6
+147,Input Sanitization,34|35|36|78|79|146,6
+148,Output Verification,34|35|36|78|79|146|147,6
+149,Reasoning Capabilities,17|18|19|38|51|69|87|88,8
+150,Pattern Recognition,17|51|149,8
+151,Casual Inference,17|51|149|150,8
+152,Knowledge Graphs,11|31|32|33|39|40|70|111|112|113,3
+153,Entity Relationship Modeling,11|40|41|42|152,3
+154,Semantic Triples,11|40|41|42|152|153,3
+155,Information Extraction,11|31|32|33|39|40|70|111|152|153|154,3
+156,Named Entity Recognition,11|31|32|33|39|40|70|111|152|153|154|155,3
+157,Relation Extraction,11|31|32|33|39|40|70|111|152|153|154|155|156,3
+158,Knowledge Base Question Answering,11|31|32|33|39|40|70|111|152|153|154|155|156|157,8
+159,Context-Aware Responses,17|18|19|51|71|73|95|96|105,5
+160,Conversation Flow Management,17|18|19|51|71|73|95|96|105|159,9
+161,Dialog State Tracking,17|18|19|51|71|73|95|96|105|159|160,9
+162,Multi-Turn Reasoning,17|18|19|38|51|69|87|88|149|159|160|161,8
+163,Long-Context Understanding,17|18|19|51|71|73|95|96|105|159,5
+164,Document Understanding,17|18|19|51|71|73|95|96|105|159|163,5
+165,Multi-Modal Integration,17|18|19|51|71|73|95|96|105|159|163|164,5
+166,Cross-Domain Knowledge Transfer,17|18|19|31|32|33|39|40|70|111,5
+167,Peer Review Process,125|128|129|130|131|132,11
+168,Projects Evaluation,125|128|129|130|131|132|167,11
+169,Milestone Reviews,125|128|129|130|131|132|167|168,11
+170,Case Study Analysis,9|10|18|19|28|47|48|89|90|104,11
+171,Implementation Best Practices,1|15|20|28|47|48|56|58|59|89|90|91|92,10
+172,Design Patterns,1|89|171,10
+173,Agile Development,89|132|171|172,10
+174,Test-Driven Development,1|34|80|89|132|171|172|173,10
+175,Continuous Integration,4|5|89|132|133|171|172|173|174,10
+176,Agent Evaluation Framework,125|128|129|130|167|168|169,11
+177,Educational Applications,9|18|19|28|45|47|48,11
+178,Business Process Automation,9|18|19|28|43|44|47|48,11
+179,Customer Service Agents,9|18|19|28|47|48|63|64|71|72|73|86|103,11
+180,Research Assistants,9|18|19|28|47|48|63|64|71|72|73|86|103,11
+181,Creative Collaboration Agents,9|18|19|28|47|48|63|64|71|72|73|86|103,11
+182,Code Assistance Agents,9|18|19|28|47|48|63|64|71|72|73|86|103,11
+183,Decision Support Systems,9|18|19|28|47|48|63|64|71|72|73|86|103,11
+184,Information Retrieval Agents,9|18|19|28|31|32|33|39|40|47|48|70|111,11
+185,Scheduling Assistants,9|18|19|28|47|48|63|64|71|72|73|86|103,11
+186,Financial Analysis Agents,9|18|19|28|47|48|63|64|71|72|73|86|103,11
+187,Healthcare Support Agents,9|18|19|28|47|48|63|64|71|72|73|86|103,11
+188,Legal Research Agents,9|18|19|28|31|32|33|39|40|47|48|70|111,11
+189,Multi-Agent Collaboration,9|18|19|48|121|122|123|124,10
+190,Agent Roles and Responsibilities,9|18|19|48|121|122|123|124|189,10
+191,Task Delegation,9|18|19|48|121|122|123|124|189|190,10
+192,Agent Coordination,9|18|19|48|121|122|123|124|189|190|191,10
+193,Conflict Resolution,9|18|19|48|121|122|123|124|189|190|191|192,10
+194,Distributed Problem Solving,9|18|19|48|121|122|123|124|189|190|191|192|193,10
+195,Teamwork Dynamics,9|18|19|48|121|122|123|124|189|190|191|192|193|194,10
+196,ISO Definition Standards,11,12
+197,Model Caching Strategies,17|37|46|50|74|76|77|98|99|107|108,7
+198,Hybrid Agent Systems,9|18|19|28|47|48|56|58|59|89|90|104,10
+199,Future of Agent Technologies,9|10|18|19|28|47|48|104|132,12
+200,Ethics in Agent Design,9|10|18|19|28|35|36|47|48|79,12
