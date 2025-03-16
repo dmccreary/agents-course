@@ -277,3 +277,135 @@ Letting an LLM call a specific function usually with specific patterns.
 A list of the tools available for an agent to use.  Each tool must be described by a name, description and list of parameters and their possible data types and enumerated values.
 
 In this course, the definition of Python functions that can be used by agents must have a [Docstring](#docstring) with the `@tool` annotation.
+
+Based on the documents you've provided, here are some terms that appear to be missing from the glossary but would be relevant to the course on intelligent software agents. I've created ISO 11179-compliant definitions for each:
+
+#### Code Agent
+
+A specialized type of artificial intelligence agent that directly generates and executes programming code to perform tasks autonomously.
+
+In the context of intelligent software agents, code agents represent an advanced form of agency where the agent produces executable code rather than structured formats like JSON to perform actions. This approach allows for greater expressiveness, efficiency, and flexibility when solving complex problems, as the agent can leverage the full capabilities of a programming language. Code agents in this course are implemented using the SmolAgents framework and typically generate Python code.
+
+**Example:** A student might implement a code agent that analyzes a dataset by writing Python code to load the CSV file, perform statistical calculations, and visualize the results, all without requiring predefined functions for each specific operation.
+
+#### Tool Catalog
+
+A comprehensive inventory of functions, APIs, or services available for an agent to utilize when performing tasks.
+
+In the context of intelligent software agents, tool catalogs serve as the interface between an agent's reasoning capabilities and the external world. A well-designed tool catalog provides the agent with clearly defined operations it can perform, complete with detailed metadata about each tool's purpose, required parameters, and expected outputs. In this course, tool catalogs are typically implemented using Python functions decorated with `@tool` and accompanied by descriptive docstrings.
+
+**Example:** When building an agent to assist with data analysis tasks, a student would first create a tool catalog containing functions for data loading, transformation, statistical analysis, and visualization, each documented with proper parameters and return types.
+
+#### Ollama
+
+A software framework that enables deployment and execution of large language models locally on personal computing devices.
+
+In the context of intelligent software agents, Ollama provides a crucial capability for running LLMs without cloud dependencies, allowing for development and testing of agents with reduced latency and cost. The framework optimizes resource utilization and provides standardized interfaces for model management, inference, and integration with agent frameworks like SmolAgents. In this course, Ollama is used to run the DeepSeek R1 model on local GPUs.
+
+**Example:** Before implementing their code agent, a student would first install Ollama on their system and download the DeepSeek R1 7B model to enable local execution of their agent without relying on external API services.
+
+#### DeepSeek R1
+
+A large language model developed in China that combines mixture of experts with reinforcement learning to create efficient, smaller-scale models.
+
+In the context of intelligent software agents, DeepSeek R1 represents an accessible yet powerful foundation model that can run on consumer-grade hardware while maintaining strong reasoning and code generation capabilities. The model's architecture enables it to perform complex tasks with relatively modest computational requirements. In this course, the 7 billion parameter variant of DeepSeek R1 is deployed through Ollama to serve as the reasoning engine for various agent implementations.
+
+**Example:** A student might observe that their code agent running on DeepSeek R1 7B can generate effective Python code for data analysis while maintaining an inference speed of over 50 tokens per second on their local GPU.
+
+#### SmolAgents
+
+A lightweight agent framework developed by HuggingFace designed for efficient creation and deployment of language model-powered agents.
+
+In the context of intelligent software agents, SmolAgents provides a streamlined approach to agent development that reduces unnecessary abstraction layers while maintaining flexibility for implementing various agency levels. The framework supports multiple agent types, including specialized code agents that can generate and execute Python code directly. In this course, SmolAgents serves as the primary framework for implementing and experimenting with different agent architectures.
+
+**Example:** Using the SmolAgents library, a student might implement a basic agent that uses the `FinalAnswerTool` to provide responses, then progressively enhance it to a code agent capable of writing and executing Python functions to solve more complex problems.
+
+#### FinalAnswerTool
+
+A component within agent frameworks that enables an agent to provide definitive responses to user queries.
+
+In the context of intelligent software agents, the FinalAnswerTool represents the simplest form of agent output mechanism, allowing the agent to formulate and deliver conclusive responses. It serves as a foundation for more complex tool interactions and is often used as a fallback when specialized tools are not required for a particular query. In the SmolAgents framework used in this course, the FinalAnswerTool is a basic building block for agent implementation.
+
+**Example:** When implementing their first agent using SmolAgents, a student would start by incorporating the FinalAnswerTool to allow their agent to respond directly to informational queries before adding more specialized tools for data manipulation or code execution.
+
+#### Knowledge Graph
+
+A structured representation of knowledge consisting of entities, their semantic types, properties, and the relationships between them.
+
+In the context of intelligent software agents, knowledge graphs provide a mechanism for organizing and interconnecting domain-specific information in a way that facilitates reasoning, inference, and contextual understanding. Knowledge graphs extend beyond simple data storage by explicitly modeling the relationships between concepts, allowing agents to navigate complex information spaces more effectively. In this course, knowledge graphs may be used to augment agent capabilities by providing structured knowledge beyond what is encoded in the base language model.
+
+**Example:** A student might enhance their agent by creating a knowledge graph of programming concepts and their relationships, enabling the agent to understand connections between different libraries, functions, and programming paradigms when generating code solutions.
+
+#### Agency Level
+
+A classification system that defines the degree of autonomy and decision-making authority granted to an intelligent software agent.
+
+In the context of intelligent software agents, agency levels provide a framework for understanding and designing agents with appropriate capabilities for specific use cases. These levels range from simple decision support (Level 0-1) to complex autonomous behaviors including code generation and execution (Level 5). In this course, students progressively implement agents with increasing agency levels as they develop more sophisticated understanding and implementation skills.
+
+**Example:** A student project might begin with a Level 2 agent that can select and call predefined tools based on user input, then evolve to a Level 5 agent capable of writing, testing, and executing its own Python code to solve novel problems.
+
+Here are additional terms that are not currently in the glossary but would be valuable additions for the course on intelligent software agents:
+
+#### Controlled Imports
+
+A security mechanism that restricts which external libraries or modules an agent can access when executing generated code.
+
+In the context of intelligent software agents, controlled imports are a critical safety feature, particularly for code agents that generate and execute Python code. By limiting the modules an agent can import and use, developers can prevent potentially harmful operations while still allowing the agent to perform its intended functions. In this course, controlled imports would be implemented as part of the sandboxed environment when working with code-generating agents.
+
+**Example:** When configuring a code agent for a data analysis task, a student would implement controlled imports to allow access to pandas and matplotlib for data processing and visualization, while restricting access to system-level modules that could pose security risks.
+
+#### Sandboxed Environment
+
+A secured, isolated execution context that constrains the resources, capabilities, and potential impact of code generated by an artificial intelligence system.
+
+In the context of intelligent software agents, sandboxed environments provide essential protection when working with code agents or any system that executes dynamically generated code. They establish boundaries around what operations can be performed, what files can be accessed, and what system resources can be utilized, mitigating the risk of unintended or malicious behaviors. In this course, sandboxed environments are used when implementing code agents to ensure safe execution of agent-generated Python code.
+
+**Example:** To safely deploy their code agent in a production setting, a student would configure a sandboxed environment that allows the agent to process data and generate insights without having access to sensitive system files or network capabilities.
+
+#### Multi-Agent System
+
+A computational framework composed of multiple interacting intelligent agents working together to solve complex problems or achieve shared goals.
+
+In the context of intelligent software agents, multi-agent systems represent an advanced architectural pattern where specialized agents collaborate, communicate, and coordinate their activities. Each agent may have distinct capabilities, knowledge bases, or roles, but collectively they address problems that would be difficult for a single agent to solve effectively. In this course, students explore how to design and implement multi-agent systems where agents with complementary capabilities can interact.
+
+**Example:** For their capstone project, a team might develop a multi-agent system for software development assistance, with specialized agents handling requirements analysis, code generation, testing, and documentation, all coordinating through a shared communication protocol.
+
+#### Reasoning Trace
+
+A documented sequence of logical steps generated by an agent that explains its thought process in arriving at a decision or conclusion.
+
+In the context of intelligent software agents, reasoning traces provide transparency into an agent's decision-making, allowing users and developers to understand how and why particular actions were chosen. Reasoning traces are a key component of the ReAct framework, where they are interleaved with actions to improve performance and explainability. In this course, students implement agents that generate reasoning traces to make their behavior more interpretable and trustworthy.
+
+**Example:** When analyzing a complex dataset, a student's agent might produce a reasoning trace that outlines its approach: "First, I'll check for missing values in the dataset. Then, I'll examine the distribution of each variable. Based on those distributions, I'll select appropriate statistical tests for the hypothesis."
+
+#### Token Generation Rate
+
+The speed at which a language model produces new text elements, measured in tokens per second during the inference process.
+
+In the context of intelligent software agents, token generation rate is a critical performance metric that directly impacts the responsiveness and usability of agent systems. Higher generation rates result in more fluid interactions and shorter response times, particularly important for interactive applications. In this course, token generation rate is a consideration when deploying models locally using Ollama, with adequate GPU hardware enabling rates of 50+ tokens per second for models like DeepSeek R1.
+
+**Example:** A student might observe that after optimizing their local environment, their agent built on DeepSeek R1 achieves a token generation rate of 55 tokens per second, making it suitable for real-time coding assistance tasks that require prompt responses.
+
+#### Retrieval Augmented Generation (RAG)
+
+A hybrid approach that enhances language model outputs by retrieving relevant information from external knowledge sources before generating responses.
+
+In the context of intelligent software agents, RAG systems address the limitation of fixed knowledge in pre-trained models by dynamically incorporating domain-specific or up-to-date information during inference. This approach allows agents to leverage both the reasoning capabilities of language models and accurate, specific knowledge from external sources. In this course, RAG techniques are used to combine public knowledge (encoded in LLMs) with private knowledge sources specific to particular domains or organizations.
+
+**Example:** A student implementing an agent for academic research assistance might use RAG to retrieve information from course materials and research papers before generating responses, ensuring the agent provides accurate and relevant guidance based on the latest scholarship.
+
+#### LLM Reasoning
+
+The process by which a large language model analyzes information, makes inferences, and arrives at conclusions through patterns learned during training.
+
+In the context of intelligent software agents, LLM reasoning forms the cognitive foundation that enables agents to understand requests, plan approaches, and generate appropriate responses or actions. While traditional software relies on explicit logic, LLM reasoning emerges from statistical patterns learned across vast text corpora. In this course, students learn to leverage and guide LLM reasoning through effective prompting, context management, and task decomposition.
+
+**Example:** When designing an agent to solve complex programming problems, a student would structure their prompts to encourage step-by-step LLM reasoning, allowing the model to break down the problem, consider alternative approaches, and identify potential edge cases before generating code.
+
+#### Agentic Workflow
+
+A sequence of operations where large language models control the execution flow, decision points, and tool selection to accomplish complex tasks autonomously.
+
+In the context of intelligent software agents, agentic workflows represent the orchestration of planning, reasoning, and action that enables an agent to pursue goals with minimal human intervention. These workflows may involve loops, conditionals, and dynamic adjustments based on intermediate results. In this course, students implement increasingly sophisticated agentic workflows as they progress from basic tool-calling to advanced code generation and execution.
+
+**Example:** A student might develop an agentic workflow for data analysis that begins with data exploration, automatically determines which cleaning operations are needed, selects appropriate visualization techniques based on data characteristics, and finally generates insights without requiring step-by-step human guidance.

@@ -1,0 +1,201 @@
+ConceptID,ConceptLabel,Dependencies
+1,Python Programming,
+2,Data Types,1
+3,Data Structures,1|2
+4,Version Control,
+5,GitHub,4
+6,Integrated Development Environment,
+7,Visual Studio Code,6
+8,Command Line Interface,
+9,Software Agents,1|11|12
+10,Agency Levels,9|61
+11,Knowledge Representation,
+12,Tools,1|43
+13,Tool Calling,12|17
+14,Tool Catalogs,12|13|29
+15,Local Development Environment,7|8|16
+16,Ollama,8|17|21
+17,Large Language Models,
+18,DeepSeek R1,17|139|140|141
+19,Prompt Engineering,17
+20,Basic Tool-Calling Agents,9|13|19
+21,Graphics Processing Unit,78|79
+22,GPU Optimization,16|21|41
+23,SmolAgents Library,9|30|82
+24,Agent Frameworks,9|25|26|27
+25,LangChain,9|13|153
+26,PydanticAI,9|13
+27,ReAct Framework,9|83|84
+28,Custom Tools,12|43|44|45
+29,Tool Documentation,12|43|91
+30,Code Agents,9|31|32|100
+31,Direct Code Generation,17|59|77
+32,Code Execution,31|50|51|52
+33,Public Knowledge,17
+34,Private Knowledge,
+35,Knowledge Sources Integration,33|34|85|143
+36,Multi-Agent Systems,9|106|107|108|109
+37,Error Handling,119|136|195
+38,Safety Considerations,37|50|51|52|103
+39,Intelligent Textbook,
+40,Lightweight LLMs,17|142
+41,GPU Memory Requirements,21|80
+42,Token Generation Rate,17|80|112
+43,Python Docstrings,1
+44,Decorators,1
+45,Tool Decorator,12|44
+46,Function Parameters,1
+47,Parameter Types,2|46
+48,Return Types,2
+49,ISO 11179 Definitions,
+50,Controlled Imports,52|104
+51,Sandboxed Environment,52|105
+52,Code Security,
+53,LLM Integration,17|81
+54,Agent Architecture,9|199
+55,Decision-Making Agents,9|56
+56,Function-Calling Agents,9|13|173
+57,Iterative Agents,9|118
+58,Workflow Agents,9|93|117
+59,Code-Generating Agents,9|30|31
+60,Agentic Execution,9|61|158
+61,LLM Agent Control,9|158
+62,Agency Spectrum,9|10|61
+63,Knowledge Graphs,11
+64,Ontologies,11|63
+65,Semantic Networks,11|63
+66,Frames,11
+67,Rules-Based Systems,11|99
+68,Logic-Based Systems,11
+69,Information Organization,11
+70,Reasoning Mechanisms,11|124|125|126
+71,Semantic Grounding,11|127|128
+72,Procedural Code,1
+73,Declarative Code,1
+74,Agentic Code,1|9|60
+75,JSON Formatting,1|2
+76,LLM Response Parsing,17|75
+77,Python Code Snippets,1
+78,Matrix Operations,
+79,Parallel Processing,
+80,Model Inference,17|42
+81,Local LLM Deployment,16|131|132|133
+82,FinalAnswerTool,23
+83,Reasoning Trace,17|110|187
+84,Interleaved Reasoning and Action,27|83
+85,Retrieval Augmented Generation,17|114
+86,Knowledge Representation Trade-offs,11|129|130
+87,Tool API Design,12|91
+88,Action Definition,9|12
+89,Agntcy Standards,9
+90,Model Context Protocol,17|115
+91,Tool Name Conventions,12
+92,Business Process Modeling Notation,
+93,Goal-Driven Process,94
+94,Software Development Life Cycle,
+95,Computational Entities,9
+96,Autonomous Systems,9|96|158
+97,User Goal Representation,9|11
+98,Domain Knowledge,11|34|190
+99,Rule-Based Systems,
+100,Code Agent Approach,30|101|102
+101,Efficiency in Execution,32|112
+102,Expressiveness in Programming,77
+103,Security Risks,32|52
+104,Module Access Control,50
+105,Isolation Contexts,51
+106,Agent Collaboration,36
+107,Agent Communication,36
+108,Agent Coordination,36
+109,Specialized Agent Roles,36
+110,Transparent Decision-Making,111
+111,Explainable AI,
+112,Response Time Optimization,42|113
+113,Fluid Interactions,
+114,External Knowledge Integration,35|143
+115,Context Management,17|149
+116,Task Decomposition,9
+117,Orchestration of Planning,58|118
+118,Dynamic Adjustments,57
+119,Python Exception Handling,1|37
+120,Symbolic Structures,11
+121,Entity Relationships,63|182
+122,Constraint Modeling,11
+123,Knowledge Access Efficiency,11|69
+124,Inference Mechanisms,11|70|186
+125,Truth Value Evaluation,11|70
+126,Incomplete Information Handling,11|70
+127,Abstract Symbol Mapping,11|71
+128,Real-World Referents,11|71
+129,Expressiveness vs Efficiency,11|86
+130,Computational Resource Constraints,86
+131,Local vs Cloud Execution,81
+132,Latency Reduction,81
+133,Cost Optimization,81
+134,Parameter Documentation,29|46|47|135
+135,Enumerated Values,2
+136,Error Return Formats,37
+137,Python Function Definition,1|43|46|48
+138,Automated Documentation,43
+139,DeepSeek Architecture,18|140|141
+140,Mixture of Experts,17|18
+141,Reinforcement Learning,18
+142,Parameter Efficiency,17|18|40
+143,Knowledge Base Integration,35
+144,Token Prediction,17
+145,Next-Token Prediction,17|144
+146,Deep Learning Models,17
+147,Transformer Architecture,17|146
+148,Attention Mechanisms,17|147
+149,Context Windows,17|115|197
+150,Prompt Templates,19
+151,Few-Shot Learning,17|19
+152,Zero-Shot Capabilities,17|19
+153,Agent Memory Systems,9|154
+154,Conversation State Management,9|153
+155,External Tool Connection,9|12|156
+156,API Integration,12|155
+157,Database Connectivity,156
+158,System Autonomy Degree,9|60|96
+159,Code Generation Quality,31|160|161
+160,Code Testing,32
+161,Code Debugging,32|37|119
+162,Agent Performance Metrics,9
+163,Peer Review Process,162
+164,Project Planning,
+165,Milestone Reviews,164
+166,Feedback Integration,164|165
+167,Interactive Agent Design,9|168|169
+168,User Experience Considerations,167
+169,Agent Interface Design,167
+170,Command Parsing,8|17
+171,Intent Recognition,17|172
+172,Natural Language Understanding,17
+173,Tool Selection Logic,13|56|198
+174,Parameter Extraction,13|46|47
+175,Content Generation,17
+176,Content Refinement,175
+177,Multimodal Agents,9
+178,Education Applications,9|39
+179,Code Assistant Applications,9|30
+180,Knowledge Graph Traversal,63
+181,Graph Database Integration,63|157
+182,Relationship Types,63|121
+183,Entity Properties,63
+184,Knowledge Graph Construction,63|182|183
+185,Knowledge Graph Maintenance,63|184
+186,Knowledge Inference,63|124
+187,Reasoning Chain Documentation,83
+188,Decision Transparency,83|110|111
+189,Interpretable Agent Behavior,9|110|111|188
+190,Domain-Specific Knowledge,11|34|98
+191,Tool Interoperability,12|14
+192,Result Validation,37
+193,Output Formatting,175|176
+194,Code Documentation Generation,31|43|138
+195,Error Messages Interpretation,37|119
+196,LLM Limitations,17
+197,Context Window Management,17|115|149
+198,Tool Selection Strategies,13|14|173
+199,System Architecture Design,9|54
+200,Agent Deployment Strategies,9|15|16|22

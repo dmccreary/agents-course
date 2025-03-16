@@ -33,6 +33,9 @@ nav:
     - DeepSeek R1: concepts/deepseek-r1.md
     - Project Rules: concepts/project-rules.md
     - PydanticAI: concepts/pydanticai.md
+  - MicroSims:
+    - Introduction: sims/index.md
+    - Learning Graph: sims/learning-graph/index.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - Feedback: feedback.md
