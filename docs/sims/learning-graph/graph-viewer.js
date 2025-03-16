@@ -12,7 +12,9 @@ function drawGraph() {
                 // placement can't be done in a group
                 node.x = -1500;
                 node.fixed = { x: true, y: false }; // Fix x, but let y be adjusted by physics
-                
+            } else if (node.group === "projects") {
+                node.x = 1300;
+                node.fixed = { x: true, y: false }; // Fix x, but let y be adjusted by physics
             } else if (node.group === "goal") {
                 node.x = 1500;
                 node.fixed = { x: true, y: false }; // Fix x, but let y be adjusted by physics
@@ -67,7 +69,7 @@ function drawGraph() {
         "found": {
            shape: "box", 
            color:{background:'red'},
-           font: {color: "black"},
+           font: {color: "white"},
         },
         "agent-theory": {
            color:{background:'orange'},
@@ -78,15 +80,15 @@ function drawGraph() {
            font: {color: "black"}
         },
        "tools": {
-        color:{background:'light-green'},
+        color:{background:'lightgreen'},
         font: {color: "black"}
        },
         "llms": {
-          color:{background:'green'},
+          color:{background:'lightblue'},
           font: {color: "black"}
        },
        "security": {
-          color:{background:'indigo'},
+          color:{background:'purple'},
           font: {color: "black"}
        },
        "performance": {
@@ -106,15 +108,15 @@ function drawGraph() {
            font: {color: "black"}
         },
         "dev": {
-           color:{background:'black'},
+           color:{background:'blue'},
            font: {color: "black"}
         },
         "projects": {
-           color:{background:'dark-green'},
+           color:{background:'darkgreen'},
            font: {color: "black"}
         },
         "misc": {
-           color:{background:'dark-blue'},
+           color:{background:'darkblue'},
            font: {color: "black"}
         },
         goal: {

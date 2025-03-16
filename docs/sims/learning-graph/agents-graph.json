@@ -23,7 +23,7 @@
         {
             "id": 5,
             "label": "GitHub",
-            "group": 1
+            "group": "dev"
         },
         {
             "id": 6,
@@ -33,12 +33,12 @@
         {
             "id": 7,
             "label": "Visual Studio Code",
-            "group": 1
+            "group": "dev"
         },
         {
             "id": 8,
             "label": "Command Line Interface",
-            "group": 1
+            "group": "dev"
         },
         {
             "id": 9,
@@ -143,7 +143,7 @@
         {
             "id": 29,
             "label": "Python Functions",
-            "group": 1
+            "group": "dev"
         },
         {
             "id": 30,
@@ -263,12 +263,12 @@
         {
             "id": 53,
             "label": "Procedural Code",
-            "group": 1
+            "group": "agent-theory"
         },
         {
             "id": 54,
             "label": "Declarative Code",
-            "group": 1
+            "group": "agent-theory"
         },
         {
             "id": 55,
@@ -323,7 +323,7 @@
         {
             "id": 65,
             "label": "Function Definition",
-            "group": 1
+            "group": "agent-theory"
         },
         {
             "id": 66,
@@ -398,7 +398,7 @@
         {
             "id": 80,
             "label": "Exception Handling",
-            "group": 1
+            "group": "agent-theory"
         },
         {
             "id": 81,
@@ -468,7 +468,7 @@
         {
             "id": 94,
             "label": "Data Preprocessing",
-            "group": 1
+            "group": "knowledge-representation"
         },
         {
             "id": 95,
@@ -503,12 +503,12 @@
         {
             "id": 101,
             "label": "Python Libraries",
-            "group": 1
+            "group": "dev"
         },
         {
             "id": 102,
             "label": "Data Visualization",
-            "group": 1
+            "group": "ui"
         },
         {
             "id": 103,
@@ -628,12 +628,12 @@
         {
             "id": 126,
             "label": "Logging Strategies",
-            "group": 1
+            "group": "ui"
         },
         {
             "id": 127,
             "label": "Debugging Techniques",
-            "group": 1
+            "group": "dev"
         },
         {
             "id": 128,
@@ -663,7 +663,7 @@
         {
             "id": 133,
             "label": "Versioning Strategies",
-            "group": 1
+            "group": "dev"
         },
         {
             "id": 134,
