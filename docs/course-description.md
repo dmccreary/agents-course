@@ -29,30 +29,35 @@ By the end of this course, students will be able to:
 ## Course Structure
 
 ### Weeks 1-2: Foundations of Agent Systems
+
 - Introduction to software agents and agency levels
 - Knowledge representation fundamentals
 - Tools, tool calling, and tool catalogs
 - Setting up local development environments with Ollama
 
 ### Weeks 3-4: LLM Integration and Local Deployment
+
 - Working with DeepSeek R1 and other lightweight LLMs
 - Prompt engineering for agent development
 - Building basic tool-calling agents
 - GPU optimization for local deployment
 
 ### Weeks 5-6: Agent Frameworks
+
 - Introduction to SmolAgents library
 - Comparative analysis of agent frameworks (LangChain, PydanticAI)
 - The ReAct framework implementation
 - Creating custom tools with proper documentation
 
 ### Weeks 7-8: Advanced Agent Capabilities
+
 - Code Agents: direct code generation and execution
 - Combining public and private knowledge sources
 - Building multi-agent systems
 - Error handling and safety considerations
 
 ### Weeks 9-12: Capstone Project
+
 - Team formation and project planning
 - Milestone reviews and peer feedback sessions
 - Project implementation and iteration
@@ -82,3 +87,24 @@ By the end of this course, students will be able to:
 ## Note to Prospective Students
 
 This course operates at the intersection of artificial intelligence, software engineering, and knowledge representation. While we provide substantial guidance, students should be prepared for a highly experimental learning environment, as agent technologies are rapidly evolving. Creative problem-solving and adaptation to emerging frameworks will be essential for success in this course.
+
+## Questions
+
+### Do I have to have a computer with a GPU?
+
+No, but it is strongly recommended.
+
+### What is a good enough local GPU?
+
+The ideal system is one that has a minimum of 12GB of RAM such as a NVIDIA GTX series of Consumer/Gaming GPUs.  Here are some examples:
+
+- GeForce RTX 4090 (24 GB)
+- GeForce RTX 4080 (16 GB)
+- GeForce RTX 3090 Ti (24 GB)
+- GeForce RTX 3090 (24 GB)
+- GeForce RTX 3080 Ti (12 GB)
+- GeForce RTX 3080 (12 GB version)
+
+These systems all can generate over 50 tokens per second when running Ollama and the DeepSeek-R1 LLM.  Using a local LLM means you don't need to pay high fees to cloud LLM service providers.
+
+Note that the four year old GeForce RTX 3080 sells for approximately $350-$550 on marketplaces like eBay and Craigslist.  You can often ask your friends of they have an old GPU that they are no longer using.
