@@ -23,10 +23,11 @@ nav:
   - Concepts:
     - Introduction: concepts/index.md
     - Background: concepts/background.md
+    - Similarity: concepts/similarity.md
+    - Knowledge Representation: concepts/knowledge-representation.md
     - Procedural vs. Agentic: concepts/workflows/types-of-coding.md
     - Docstrings and Decorators: concepts/docstring.md
     - Agents: concepts/agents.md
-    - Knowledge Representation: concepts/knowledge-representation.md
     - Workflows: concepts/workflows/index.md
     - Code Agents: concepts/code-agents.md
     - ReAct Framework: concepts/react-framework.md
