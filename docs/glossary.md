@@ -186,6 +186,14 @@ Knowledge representation encompasses:
 
 Effective knowledge representation systems in agents balance expressiveness (the ability to represent complex knowledge) with computational efficiency (allowing the agent to reason within reasonable time and resource constraints).
 
+#### LlamaIndex
+
+A framework for connecting large language models with external data sources through structured retrieval and indexing mechanisms.
+
+In the context of intelligent software agents, LlamaIndex is relevant as it provides specialized components for building retrieval-augmented generation systems that allow agents to combine their intrinsic knowledge with domain-specific information from external sources. The framework emphasizes efficient indexing, retrieval, and query planning to help agents access and integrate the most relevant information when generating responses or taking actions, addressing the limitation of fixed knowledge in pre-trained models.
+
+**Example:** A developer implementing an agent to assist with company-specific documentation would use LlamaIndex to create a vector index of internal knowledge base articles, enabling the agent to retrieve and reference relevant private knowledge when answering user questions about company policies or procedures.
+
 #### LLM Agent Control Levels
 
 The amount you allow an LLM to control agentic execution.

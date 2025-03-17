@@ -1,5 +1,5 @@
 site_name: Building Intelligent Agents
-site_description: 'Resources for building intelligent agents using local GPU resources'
+site_description: 'Resources for building intelligent agents using knowledge graphs and local GPUs'
 site_author: 'Dan McCreary'
 repo_name: 'GitHub Repo'
 site_url: 'https://dmccreary.github.io/agents-course/'
@@ -28,16 +28,19 @@ nav:
     - Procedural vs. Agentic: concepts/workflows/types-of-coding.md
     - Docstrings and Decorators: concepts/docstring.md
     - Agents: concepts/agents.md
+    - LLM Control Levels: concepts/llm-control-levels.md
     - Workflows: concepts/workflows/index.md
     - Code Agents: concepts/code-agents.md
     - ReAct Framework: concepts/react-framework.md
     - DeepSeek R1: concepts/deepseek-r1.md
     - Project Rules: concepts/project-rules.md
     - PydanticAI: concepts/pydanticai.md
+    - SmolAgents: concepts/smolagents.md
   - Tutorials:
     - Introduction: tutorials/index.md
     - Ollama: tutorials/ollama.md
     - SmolAgents: tutorials/smolagents.md
+    - SmolAgents Local Setup: tutorials/smolagents-deepseek-ollama.md
     - PydanticAI: tutorials/pydanticai.md
   - Prompts:
     - Introduction: prompts/index.md
@@ -49,6 +52,10 @@ nav:
   - MicroSims:
     - Introduction: sims/index.md
     - Learning Graph: sims/learning-graph/index.md
+    - LLM Control Levels: sims/llm-control-levels/index.md
+    - Five Textbook Levels: sims/five-textbook-levels/index.md
+    - Templates: sims/templates/index.md
+    - Learning Steps: sims/agentic-learning-steps/index.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - Feedback: feedback.md

@@ -2,9 +2,10 @@
 
 As of February of 2025, there are three AI Agent Libraries that are popular: 
 
-1. [LangChain](../glossary.md#l) - the first popular agent library
-2. [LlamaIndex]() - a more recent library that fixed many problems with LangChain
-3. [SmoLAgents] - a library created by HuggingFace to work with small models on your local GPU
+1. [PydanticAI](../glossary.md#pydanticai) - a popular but simple Python only agent library
+1. [LangChain](../glossary.md#langchain) - the first popular agent library with many components
+2. [LlamaIndex](../glossary.md#langchain) - a more recent library that fixed many problems with LangChain
+3. [SmoLAgents](../glossary.md#smolagents) - a recent agent library created by HuggingFace to work with small models on your local GPU and [Code Agents](../glossary.md#code-agent)
 
 Let's compare these three AI agent libraries based on their features, strengths, and limitations:
 
