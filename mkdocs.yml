@@ -33,6 +33,11 @@ nav:
     - DeepSeek R1: concepts/deepseek-r1.md
     - Project Rules: concepts/project-rules.md
     - PydanticAI: concepts/pydanticai.md
+  - Tutorials:
+    - Introduction: tutorials/index.md
+    - Ollama: tutorials/ollama.md
+    - SmolAgents: tutorials/smolagents.md
+    - PydanticAI: tutorials/pydanticai.md
   - Prompts:
     - Introduction: prompts/index.md
     - Concept Dependency: prompts/concept-dependency.md
