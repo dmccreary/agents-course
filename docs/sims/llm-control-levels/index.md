@@ -1,6 +1,6 @@
 # LLM Control Levels MicroSim
 
-<iframe src="main.html" height="400"></iframe>
+<iframe src="main.html" height="550px"></iframe>
 
 ```html
 <iframe src="main.html" height="400px" scrolling="no"></iframe>
