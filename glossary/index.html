@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Resources for building intelligent agents using local GPU resources">
+        <meta name="description" content="Resources for building intelligent agents using knowledge graphs and local GPUs">
       
       
         <meta name="author" content="Dan McCreary">
@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://dmccreary.github.io/agents-course/glossary/">
       
       
-        <link rel="prev" href="../sims/learning-graph/">
+        <link rel="prev" href="../sims/agentic-learning-steps/">
       
       
         <link rel="next" href="../how-we-built-this-site/">
@@ -65,7 +65,7 @@
       
         <meta  property="og:title"  content="Glossary - Building Intelligent Agents" >
       
-        <meta  property="og:description"  content="Resources for building intelligent agents using local GPU resources" >
+        <meta  property="og:description"  content="Resources for building intelligent agents using knowledge graphs and local GPUs" >
       
         <meta  property="og:image"  content="https://dmccreary.github.io/agents-course/assets/images/social/glossary.png" >
       
@@ -81,7 +81,7 @@
       
         <meta  name="twitter:title"  content="Glossary - Building Intelligent Agents" >
       
-        <meta  name="twitter:description"  content="Resources for building intelligent agents using local GPU resources" >
+        <meta  name="twitter:description"  content="Resources for building intelligent agents using knowledge graphs and local GPUs" >
       
         <meta  name="twitter:image"  content="https://dmccreary.github.io/agents-course/assets/images/social/glossary.png" >
       
@@ -395,7 +395,11 @@
         
       
         
+      
+        
           
+        
+      
         
       
         
@@ -451,6 +455,8 @@
       
         
           
+        
+      
         
       
         
@@ -554,6 +560,22 @@
   
     
     
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
       
         
           
@@ -809,6 +831,15 @@
   <a href="#knowledge-representation" class="md-nav__link">
     <span class="md-ellipsis">
       Knowledge Representation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#llamaindex" class="md-nav__link">
+    <span class="md-ellipsis">
+      LlamaIndex
     </span>
   </a>
   
@@ -1343,6 +1374,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#llamaindex" class="md-nav__link">
+    <span class="md-ellipsis">
+      LlamaIndex
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#llm-agent-control-levels" class="md-nav__link">
     <span class="md-ellipsis">
       LLM Agent Control Levels
@@ -1715,6 +1755,10 @@ Making decisions throughout the development lifecycle based on how they contribu
 </li>
 </ol>
 <p>Effective knowledge representation systems in agents balance expressiveness (the ability to represent complex knowledge) with computational efficiency (allowing the agent to reason within reasonable time and resource constraints).</p>
+<h4 id="llamaindex">LlamaIndex</h4>
+<p>A framework for connecting large language models with external data sources through structured retrieval and indexing mechanisms.</p>
+<p>In the context of intelligent software agents, LlamaIndex is relevant as it provides specialized components for building retrieval-augmented generation systems that allow agents to combine their intrinsic knowledge with domain-specific information from external sources. The framework emphasizes efficient indexing, retrieval, and query planning to help agents access and integrate the most relevant information when generating responses or taking actions, addressing the limitation of fixed knowledge in pre-trained models.</p>
+<p><strong>Example:</strong> A developer implementing an agent to assist with company-specific documentation would use LlamaIndex to create a vector index of internal knowledge base articles, enabling the agent to retrieve and reference relevant private knowledge when answering user questions about company policies or procedures.</p>
 <h4 id="llm-agent-control-levels">LLM Agent Control Levels</h4>
 <p>The amount you allow an LLM to control agentic execution.
 Her are some sample levels:</p>
@@ -1910,7 +1954,7 @@ Her are some sample levels:</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../sims/learning-graph/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Learning Graph">
+          <a href="../sims/agentic-learning-steps/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Learning Steps">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1920,7 +1964,7 @@ Her are some sample levels:</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Learning Graph
+                Learning Steps
               </div>
             </div>
           </a>

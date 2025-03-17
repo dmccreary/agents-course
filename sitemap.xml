@@ -85,6 +85,10 @@
          <lastmod>2025-03-17</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/agents-course/concepts/smolagents/</loc>
+         <lastmod>2025-03-17</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/agents-course/concepts/workflows/</loc>
          <lastmod>2025-03-17</lastmod>
     </url>
@@ -173,6 +177,10 @@
          <lastmod>2025-03-17</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/agents-course/sims/templates/</loc>
+         <lastmod>2025-03-17</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/agents-course/tutorials/</loc>
          <lastmod>2025-03-17</lastmod>
     </url>
@@ -182,6 +190,14 @@
     </url>
     <url>
          <loc>https://dmccreary.github.io/agents-course/tutorials/pydanticai/</loc>
+         <lastmod>2025-03-17</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/agents-course/tutorials/smolagents-deepseek-ollama/</loc>
+         <lastmod>2025-03-17</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/agents-course/tutorials/smolagents/</loc>
          <lastmod>2025-03-17</lastmod>
     </url>
 </urlset>
