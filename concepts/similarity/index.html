@@ -12,13 +12,13 @@
         <meta name="author" content="Dan McCreary">
       
       
-        <link rel="canonical" href="https://dmccreary.github.io/agents-course/prompts/concept-taxonomy/">
+        <link rel="canonical" href="https://dmccreary.github.io/agents-course/concepts/similarity/">
       
       
-        <link rel="prev" href="../concept-enumeration/">
+        <link rel="prev" href="../background/">
       
       
-        <link rel="next" href="../concept-classification/">
+        <link rel="next" href="../knowledge-representation/">
       
       
       <link rel="icon" href="../../img/favicon.ico">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Concept Taxonomy - Building Intelligent Agents</title>
+        <title>Similarity - Building Intelligent Agents</title>
       
     
     
@@ -63,11 +63,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Concept Taxonomy - Building Intelligent Agents" >
+        <meta  property="og:title"  content="Similarity - Building Intelligent Agents" >
       
         <meta  property="og:description"  content="Resources for building intelligent agents using local GPU resources" >
       
-        <meta  property="og:image"  content="https://dmccreary.github.io/agents-course/assets/images/social/prompts/concept-taxonomy.png" >
+        <meta  property="og:image"  content="https://dmccreary.github.io/agents-course/assets/images/social/concepts/similarity.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -75,15 +75,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://dmccreary.github.io/agents-course/prompts/concept-taxonomy/" >
+        <meta  property="og:url"  content="https://dmccreary.github.io/agents-course/concepts/similarity/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Concept Taxonomy - Building Intelligent Agents" >
+        <meta  name="twitter:title"  content="Similarity - Building Intelligent Agents" >
       
         <meta  name="twitter:description"  content="Resources for building intelligent agents using local GPU resources" >
       
-        <meta  name="twitter:image"  content="https://dmccreary.github.io/agents-course/assets/images/social/prompts/concept-taxonomy.png" >
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/agents-course/assets/images/social/concepts/similarity.png" >
       
     
     
@@ -104,7 +104,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#concept-taxonomy" class="md-skip">
+        <a href="#similarity-connecting-concepts-through-shared-attributes" class="md-skip">
           Skip to content
         </a>
       
@@ -139,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Concept Taxonomy
+              Similarity
             
           </span>
         </div>
@@ -373,6 +373,8 @@
       
   
   
+    
+  
   
   
     
@@ -412,29 +414,471 @@
     
     
       
-        
-        
-      
     
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
-  
-  
-    <a href="../../concepts/" class="md-nav__link">
-      
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Concepts
   </span>
   
 
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Concepts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Background
+  </span>
   
 
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Similarity
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Similarity
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-similarity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Similarity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lexical-similarity-words-and-synonyms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lexical Similarity: Words and Synonyms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sentence-and-paragraph-similarity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sentence and Paragraph Similarity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#embeddings-and-semantic-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embeddings and Semantic Distance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Embeddings and Semantic Distance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#word-embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Word Embeddings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sentence-and-document-embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sentence and Document Embeddings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualizing-semantic-spaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualizing Semantic Spaces
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Embeddings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Graph Embeddings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#applications-in-knowledge-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Applications in Knowledge Graphs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-indices-for-knowledge-graph-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Indices for Knowledge Graph Properties
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vector Indices for Knowledge Graph Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vector-stores-and-access-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Stores and Access Control
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vector-indices-for-search-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Indices for Search Applications
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#applications-and-future-directions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Applications and Future Directions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../knowledge-representation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Knowledge Representation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workflows/types-of-coding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Procedural vs. Agentic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docstring/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Docstrings and Decorators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agents/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Agents
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workflows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Workflows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-agents/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code Agents
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../react-framework/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReAct Framework
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deepseek-r1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DeepSeek R1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project-rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pydanticai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PydanticAI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -495,8 +939,6 @@
       
   
   
-    
-  
   
   
     
@@ -520,396 +962,29 @@
     
     
       
+        
+        
+      
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
-        
-          
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
-              
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     Prompts
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            Prompts
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../concept-dependency/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Concept Dependency
-  </span>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
 
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../concept-enumeration/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Concept Enumeration
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Concept Taxonomy
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Concept Taxonomy
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#from-prior-step" class="md-nav__link">
-    <span class="md-ellipsis">
-      From Prior Step:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="From Prior Step:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#concept-clusters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Concept Clusters:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#concept-clusters_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Concept Clusters:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#response" class="md-nav__link">
-    <span class="md-ellipsis">
-      Response
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#additional-concept-clusters-for-color-coding" class="md-nav__link">
-    <span class="md-ellipsis">
-      Additional Concept Clusters for Color-Coding
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Additional Concept Clusters for Color-Coding">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-security-safety-framework" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Security &amp; Safety Framework
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-performance-optimization" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Performance &amp; Optimization
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-knowledge-integration-reasoning" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Knowledge Integration &amp; Reasoning
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-user-interaction-experience" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. User Interaction &amp; Experience
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#visualization-strategy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Visualization Strategy
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#concept-taxonomy-for-intelligent-software-agents-course" class="md-nav__link">
-    <span class="md-ellipsis">
-      Concept Taxonomy for Intelligent Software Agents Course
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Concept Taxonomy for Intelligent Software Agents Course">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-programming-fundamentals" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Programming Fundamentals
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-agent-theory" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Agent Theory
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-knowledge-representation" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Knowledge Representation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-tool-engineering" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Tool Engineering
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-llm-implementation" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. LLM Implementation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-security-safety-framework" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Security &amp; Safety Framework
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-performance-optimization" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Performance &amp; Optimization
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#8-knowledge-integration-reasoning" class="md-nav__link">
-    <span class="md-ellipsis">
-      8. Knowledge Integration &amp; Reasoning
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#9-user-interaction-experience" class="md-nav__link">
-    <span class="md-ellipsis">
-      9. User Interaction &amp; Experience
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#10-agent-development" class="md-nav__link">
-    <span class="md-ellipsis">
-      10. Agent Development
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../concept-classification/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Concept Classification
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../taxonomy/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Taxonomy Summary
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -1111,28 +1186,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#from-prior-step" class="md-nav__link">
+  <a href="#understanding-similarity" class="md-nav__link">
     <span class="md-ellipsis">
-      From Prior Step:
+      Understanding Similarity
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="From Prior Step:">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lexical-similarity-words-and-synonyms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lexical Similarity: Words and Synonyms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sentence-and-paragraph-similarity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sentence and Paragraph Similarity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#embeddings-and-semantic-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embeddings and Semantic Distance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Embeddings and Semantic Distance">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#concept-clusters" class="md-nav__link">
+  <a href="#word-embeddings" class="md-nav__link">
     <span class="md-ellipsis">
-      Concept Clusters:
+      Word Embeddings
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#concept-clusters_1" class="md-nav__link">
+  <a href="#sentence-and-document-embeddings" class="md-nav__link">
     <span class="md-ellipsis">
-      Concept Clusters:
+      Sentence and Document Embeddings
     </span>
   </a>
   
@@ -1144,55 +1246,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#response" class="md-nav__link">
+  <a href="#visualizing-semantic-spaces" class="md-nav__link">
     <span class="md-ellipsis">
-      Response
+      Visualizing Semantic Spaces
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#additional-concept-clusters-for-color-coding" class="md-nav__link">
+  <a href="#graph-embeddings" class="md-nav__link">
     <span class="md-ellipsis">
-      Additional Concept Clusters for Color-Coding
+      Graph Embeddings
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Additional Concept Clusters for Color-Coding">
+    <nav class="md-nav" aria-label="Graph Embeddings">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-security-safety-framework" class="md-nav__link">
+  <a href="#applications-in-knowledge-graphs" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Security &amp; Safety Framework
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-performance-optimization" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Performance &amp; Optimization
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-knowledge-integration-reasoning" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Knowledge Integration &amp; Reasoning
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-user-interaction-experience" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. User Interaction &amp; Experience
+      Applications in Knowledge Graphs
     </span>
   </a>
   
@@ -1204,109 +1279,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#visualization-strategy" class="md-nav__link">
+  <a href="#vector-indices-for-knowledge-graph-properties" class="md-nav__link">
     <span class="md-ellipsis">
-      Visualization Strategy
+      Vector Indices for Knowledge Graph Properties
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#concept-taxonomy-for-intelligent-software-agents-course" class="md-nav__link">
-    <span class="md-ellipsis">
-      Concept Taxonomy for Intelligent Software Agents Course
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Concept Taxonomy for Intelligent Software Agents Course">
+    <nav class="md-nav" aria-label="Vector Indices for Knowledge Graph Properties">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-programming-fundamentals" class="md-nav__link">
+  <a href="#vector-stores-and-access-control" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Programming Fundamentals
+      Vector Stores and Access Control
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-agent-theory" class="md-nav__link">
+  <a href="#vector-indices-for-search-applications" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Agent Theory
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-knowledge-representation" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Knowledge Representation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-tool-engineering" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Tool Engineering
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-llm-implementation" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. LLM Implementation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-security-safety-framework" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Security &amp; Safety Framework
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-performance-optimization" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Performance &amp; Optimization
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#8-knowledge-integration-reasoning" class="md-nav__link">
-    <span class="md-ellipsis">
-      8. Knowledge Integration &amp; Reasoning
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#9-user-interaction-experience" class="md-nav__link">
-    <span class="md-ellipsis">
-      9. User Interaction &amp; Experience
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#10-agent-development" class="md-nav__link">
-    <span class="md-ellipsis">
-      10. Agent Development
+      Vector Indices for Search Applications
     </span>
   </a>
   
@@ -1314,6 +1308,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#applications-and-future-directions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Applications and Future Directions
+    </span>
+  </a>
   
 </li>
       
@@ -1332,7 +1335,7 @@
                   
 
   
-    <a href="https://github.com/dmccreary/agents-course/blob/master/docs/prompts/concept-taxonomy.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/agents-course/blob/master/docs/concepts/similarity.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1340,107 +1343,102 @@
   
 
 
-<h1 id="concept-taxonomy">Concept Taxonomy</h1>
-<h2 id="from-prior-step">From Prior Step:</h2>
-<h3 id="concept-clusters">Concept Clusters:</h3>
-<p>The dependencies reveal several natural clusters of related concepts:</p>
-<h3 id="concept-clusters_1">Concept Clusters:</h3>
-<p>The dependencies reveal several natural clusters of related concepts:</p>
+<h1 id="similarity-connecting-concepts-through-shared-attributes">Similarity: Connecting Concepts Through Shared Attributes</h1>
+<h2 id="understanding-similarity">Understanding Similarity</h2>
+<p>Similarity is a fundamental concept in AI and agents that describes the degree to which entities share attributes, properties, or characteristics. When we say two things are similar, we're recognizing patterns of commonality between them while acknowledging that they remain distinct entities. Similarity serves as a cognitive framework that helps us organize, categorize, and make sense of the world around us.</p>
+<p>At its core, similarity involves measuring the overlap of features or attributes between objects. These attributes can be physical properties (color, shape, size), functional capabilities, conceptual meanings, or structural patterns. The more attributes two entities share—and the more significant those shared attributes are—the greater their similarity.</p>
+<h2 id="lexical-similarity-words-and-synonyms">Lexical Similarity: Words and Synonyms</h2>
+<p>The most straightforward example of similarity appears in language with words that share meanings. Synonyms are words that possess nearly identical meanings, though they often carry subtle differences in connotation, formality, or usage contexts.</p>
+<p>Consider these synonym sets:
+- happy, joyful, delighted, pleased, content
+- big, large, enormous, gigantic, massive
+- smart, intelligent, clever, bright, astute</p>
+<p>Each set contains words with similar core meanings, yet each word has its own nuances. "Happy" might suggest a general state of well-being, while "delighted" implies a more intense, momentary feeling. "Massive" suggests imposing size, while "enormous" emphasizes exceptional scale relative to normal expectations.</p>
+<p>Word similarity exists on a spectrum rather than in binary terms. Some words are near-perfect substitutes for each other in most contexts, while others share only partial semantic overlap.</p>
+<h2 id="sentence-and-paragraph-similarity">Sentence and Paragraph Similarity</h2>
+<p>Similarity extends beyond individual words to larger linguistic structures like sentences and paragraphs. When comparing texts, similarity operates at multiple levels:</p>
 <ol>
-<li><strong>Programming Fundamentals</strong>: Python, data types, structures, docstrings</li>
-<li><strong>Agent Theory</strong>: Software agents, agency levels, autonomy</li>
-<li><strong>Knowledge Representation</strong>: Knowledge graphs, ontologies, semantic networks</li>
-<li><strong>Tool Engineering</strong>: Tool calling, catalogs, documentation</li>
-<li><strong>LLM Implementation</strong>: Model architectures, inference, deployment</li>
-<li><strong>Agent Development</strong>: Frameworks, integration, deployment strategies</li>
+<li><strong>Lexical similarity</strong>: The overlap of identical words</li>
+<li><strong>Semantic similarity</strong>: The overlap of meaning, even with different words</li>
+<li><strong>Structural similarity</strong>: Parallel grammatical or organizational patterns</li>
+<li><strong>Functional similarity</strong>: Texts that serve similar purposes</li>
 </ol>
-<div class="admonition prompt">
-<p class="admonition-title">Prompt</p>
-<p>Your observation of concept clusters is excellent.  I would like to color-code the concepts when they are displayed on the network graph.  Can you suggest four other clusters of related concepts we can use to show the concept types?</p>
-</div>
-<h2 id="response">Response</h2>
-<p>I'd be happy to suggest additional concept clusters for color-coding in your network graph visualization. Based on my analysis of the dependency structure, here are four additional meaningful clusters that would complement the ones already identified:</p>
-<h2 id="additional-concept-clusters-for-color-coding">Additional Concept Clusters for Color-Coding</h2>
-<h3 id="1-security-safety-framework">1. Security &amp; Safety Framework</h3>
-<p>Concepts related to responsible agent development, security concerns, and safe execution:
-- Code Security (#52)
-- Safety Considerations (#38)
-- Controlled Imports (#50)
-- Sandboxed Environment (#51)
-- Error Handling (#37)
-- Module Access Control (#104)
-- Isolation Contexts (#105)
-- Security Risks (#103)
-- Result Validation (#192)
-- Error Messages Interpretation (#195)</p>
-<h3 id="2-performance-optimization">2. Performance &amp; Optimization</h3>
-<p>Concepts focused on efficiency, speed, and resource management:
-- GPU Optimization (#22)
-- Token Generation Rate (#42)
-- Response Time Optimization (#112)
-- Latency Reduction (#132)
-- Cost Optimization (#133)
-- Parameter Efficiency (#142)
-- Computational Resource Constraints (#130)
-- Context Window Management (#197)
-- GPU Memory Requirements (#41)
-- Local vs Cloud Execution (#131)</p>
-<h3 id="3-knowledge-integration-reasoning">3. Knowledge Integration &amp; Reasoning</h3>
-<p>Concepts dealing with how agents access, process, and reason with information:
-- Knowledge Sources Integration (#35)
-- External Knowledge Integration (#114)
-- Knowledge Base Integration (#143)
-- Retrieval Augmented Generation (#85)
-- Reasoning Trace (#83)
-- Reasoning Mechanisms (#70)
-- Inference Mechanisms (#124)
-- Truth Value Evaluation (#125)
-- Incomplete Information Handling (#126)
-- Reasoning Chain Documentation (#187)</p>
-<h3 id="4-user-interaction-experience">4. User Interaction &amp; Experience</h3>
-<p>Concepts related to how agents interact with and serve users:
-- Interactive Agent Design (#167)
-- User Experience Considerations (#168)
-- Agent Interface Design (#169)
-- Natural Language Understanding (#172)
-- Intent Recognition (#171)
-- Command Parsing (#170)
-- Content Generation (#175)
-- Content Refinement (#176)
-- Output Formatting (#193)
-- User Goal Representation (#97)</p>
-<h2 id="visualization-strategy">Visualization Strategy</h2>
-<p>When implementing this color-coding in your network graph:</p>
+<p>Consider these sentences:
+- "The cat sat on the mat."
+- "A feline rested on the floor covering."</p>
+<p>These sentences have low lexical similarity (they share few identical words) but high semantic similarity (they convey essentially the same meaning). Meanwhile, consider:</p>
+<ul>
+<li>"The researchers discovered a new vaccine for the virus."</li>
+<li>"The scientists invented a novel preventative treatment for the pathogen."</li>
+</ul>
+<p>These sentences demonstrate both semantic similarity and structural similarity, following parallel subject-verb-object patterns while using different words to express similar concepts.</p>
+<p>Paragraph similarity follows similar principles but encompasses broader patterns of organization, thematic development, and rhetorical strategies.</p>
+<h2 id="embeddings-and-semantic-distance">Embeddings and Semantic Distance</h2>
+<p>To quantify and operationalize similarity, modern computational approaches often rely on embeddings—dense vector representations that capture semantic properties of words, sentences, or documents in multi-dimensional space.</p>
+<h3 id="word-embeddings">Word Embeddings</h3>
+<p>Word embeddings map words to vectors of real numbers, positioning semantically related words close together in vector space. Models like Word2Vec, GloVe, and FastText create these representations by analyzing patterns of word co-occurrence in large text corpora.</p>
+<p>In embedding space, similarity becomes a mathematical operation—typically measured by cosine similarity or Euclidean distance between vectors. The smaller the distance between two word vectors, the more semantically similar they are.</p>
+<p>For example, in a well-trained embedding space:
+- The vector for "king" - "man" + "woman" produces a vector close to "queen"
+- The vector for "Paris" - "France" + "Italy" produces a vector close to "Rome"</p>
+<p>These operations demonstrate how embeddings capture meaningful semantic relationships.</p>
+<h3 id="sentence-and-document-embeddings">Sentence and Document Embeddings</h3>
+<p>Advanced models like BERT, Sentence-BERT, and embeddings from large language models extend this approach to entire sentences and documents. These models create contextual embeddings that account for word order, syntactic structure, and complex semantic relationships.</p>
+<p>Document similarity then becomes a matter of measuring the distance between these high-dimensional vectors, enabling applications like semantic search, document clustering, and recommendation systems.</p>
+<h2 id="visualizing-semantic-spaces">Visualizing Semantic Spaces</h2>
+<p><strong>Figure 1: Word Embedding Visualization</strong>
+<em>This figure shows a two-dimensional projection of word embeddings where semantically related words cluster together. The visualization would show distinct clusters for concepts like animals, foods, and countries, with similar concepts positioned closer to one another. Lines connect words with strong semantic relationships, revealing patterns like analogies and associations.</em></p>
+<p><strong>Figure 2: Semantic Distance Map</strong>
+<em>This figure illustrates the concept of semantic distance by displaying a heat map of similarity scores between pairs of sentences from a sample text. Darker colors indicate higher similarity. The diagonal shows perfect self-similarity (1.0), while off-diagonal elements reveal cross-sentence relationships, highlighting thematic patterns within the text.</em></p>
+<h2 id="graph-embeddings">Graph Embeddings</h2>
+<p>While word and document embeddings capture semantic relationships in language, graph embeddings extend similar principles to structured relational data represented as networks.</p>
+<p>Graph embeddings map nodes (entities) and sometimes edges (relationships) in a graph to vector representations that preserve the graph's structural properties. The goal is to position nodes with similar connectivity patterns close together in the embedding space.</p>
+<p>Several approaches exist for creating graph embeddings:</p>
 <ol>
-<li><strong>Use distinctive colors</strong> - Choose colors with high contrast for easy visual differentiation</li>
-<li><strong>Add a legend</strong> - Include a clear legend showing what each color represents</li>
-<li><strong>Consider using gradient shading</strong> - Within each cluster, you might use darker shades for more foundational concepts and lighter shades for derived concepts</li>
-<li><strong>Highlight cross-cluster connections</strong> - Edge connections between different clusters could be emphasized to show interdisciplinary connections</li>
+<li><strong>Random walk-based methods</strong> (like Node2Vec and DeepWalk) sample paths through the graph and apply word embedding techniques to the resulting sequences</li>
+<li><strong>Matrix factorization methods</strong> decompose adjacency or Laplacian matrices of the graph</li>
+<li><strong>Graph neural networks</strong> (GNNs) learn representations by aggregating and transforming neighborhood information</li>
 </ol>
-<p>These additional clusters, combined with your original clusters, provide a comprehensive categorization scheme that covers the major conceptual areas of the course. This visualization approach will help students see the relationships between different concept types and understand how knowledge in one area supports development in others.</p>
-<h2 id="concept-taxonomy-for-intelligent-software-agents-course">Concept Taxonomy for Intelligent Software Agents Course</h2>
-<p>Here's a summary of the 10 concept classifiers with their definitions:</p>
-<h3 id="1-programming-fundamentals">1. Programming Fundamentals</h3>
-<p>Concepts related to core programming skills, languages, and data handling that form the technical foundation for agent development. This includes Python programming, data structures, function definitions, and exception handling.</p>
-<h3 id="2-agent-theory">2. Agent Theory</h3>
-<p>Theoretical concepts describing the nature, capabilities, and classification of software agents. This covers agency levels, autonomy, computational entities, and the spectrum of agent capabilities from basic to advanced.</p>
-<h3 id="3-knowledge-representation">3. Knowledge Representation</h3>
-<p>Concepts focused on how information is structured, stored, and made accessible to agents. This includes ontologies, semantic networks, frames, and the trade-offs between different representation approaches.</p>
-<h3 id="4-tool-engineering">4. Tool Engineering</h3>
-<p>Concepts related to creating, documenting, and managing the functions that agents can call to interact with external systems. This covers tool design, documentation standards, naming conventions, and APIs.</p>
-<h3 id="5-llm-implementation">5. LLM Implementation</h3>
-<p>Technical concepts specific to large language models, their architecture, deployment, and operation. This includes model types, inference techniques, context management, and transformer architecture.</p>
-<h3 id="6-security-safety-framework">6. Security &amp; Safety Framework</h3>
-<p>Concepts focused on ensuring agent systems operate responsibly and securely. This includes sandboxed environments, controlled imports, error handling, and validation of agent outputs.</p>
-<h3 id="7-performance-optimization">7. Performance &amp; Optimization</h3>
-<p>Concepts related to improving speed, efficiency, and resource utilization of agent systems. This covers GPU optimization, token generation rates, latency reduction, and computational resource management.</p>
-<h3 id="8-knowledge-integration-reasoning">8. Knowledge Integration &amp; Reasoning</h3>
-<p>Concepts addressing how agents combine information sources and perform logical reasoning. This includes retrieval augmented generation, reasoning mechanisms, knowledge base integration, and inference.</p>
-<h3 id="9-user-interaction-experience">9. User Interaction &amp; Experience</h3>
-<p>Concepts centered on how agents communicate with and serve users. This includes interface design, natural language understanding, content generation and refinement, and understanding user goals.</p>
-<h3 id="10-agent-development">10. Agent Development</h3>
-<p>Practical implementation concepts for building agent systems. This includes agent frameworks, integration patterns, deployment strategies, and specialized implementations like code agents and multi-agent systems.</p>
-<p>These classifications provide a comprehensive framework for organizing the 200 concepts in the course, highlighting the multidisciplinary nature of intelligent software agent development spanning from theoretical foundations to practical implementation considerations.</p>
+<h3 id="applications-in-knowledge-graphs">Applications in Knowledge Graphs</h3>
+<p>Graph embeddings are particularly valuable for knowledge graphs—structured representations of entities and their relationships that form the backbone of many intelligent systems.</p>
+<p>In a knowledge graph embedding, entities (nodes) and relations (edges) are represented as vectors in a shared space. This allows for:</p>
+<ol>
+<li><strong>Link prediction</strong>: Identifying missing connections between entities</li>
+<li><strong>Entity resolution</strong>: Recognizing when different references point to the same entity</li>
+<li><strong>Similarity search</strong>: Finding entities with similar attributes or relationships</li>
+</ol>
+<p><strong>Figure 3: Knowledge Graph Embedding</strong>
+<em>This figure demonstrates how entities in a knowledge graph are mapped to a vector space. The left side shows a fragment of a knowledge graph with entities (people, places, organizations) connected by typed relationships. The right side displays how these entities are positioned in a reduced-dimension embedding space, where semantically related entities cluster together regardless of direct connections in the original graph.</em></p>
+<h2 id="vector-indices-for-knowledge-graph-properties">Vector Indices for Knowledge Graph Properties</h2>
+<p>Building on the concept of embeddings, vector indices provide efficient data structures for organizing and retrieving vectors based on similarity. These indices are crucial for implementing practical applications that leverage similarity in large-scale systems.</p>
+<h3 id="vector-stores-and-access-control">Vector Stores and Access Control</h3>
+<p>Modern vector stores must address not just similarity search but also security concerns. Role-based access control (RBAC) becomes essential when storing embeddings derived from sensitive documents or proprietary knowledge graphs.</p>
+<p>In practice, this means:
+1. Associating access permissions with each vector in the store
+2. Filtering search results based on the querying user's roles and permissions
+3. Maintaining security boundaries even when computing similarity across document collections</p>
+<p>For example, a company's internal knowledge base might contain embeddings from various departments, with sensitive financial projections only accessible to executives, while general product documentation is available company-wide. The vector store must respect these boundaries during similarity search operations.</p>
+<h3 id="vector-indices-for-search-applications">Vector Indices for Search Applications</h3>
+<p>Vector indices transform semantic search from a conceptual possibility to a practical tool. Modern search systems increasingly combine:</p>
+<ol>
+<li><strong>Traditional keyword matching</strong>: Finding exact text patterns</li>
+<li><strong>Vector similarity</strong>: Finding conceptually related content</li>
+<li><strong>Structural awareness</strong>: Incorporating knowledge of document or graph structure</li>
+</ol>
+<p>This hybrid approach enables more intelligent search experiences that understand user intent beyond literal query terms.</p>
+<p><strong>Figure 4: Hybrid Search Architecture</strong>
+<em>This figure illustrates a modern search architecture that combines multiple similarity measures. The diagram shows how a user query is processed through parallel paths: keyword matching against an inverted index, semantic matching against a vector index, and structure-aware matching against a knowledge graph. The results are then combined using a ranking algorithm that weighs evidence from all three sources to present the most relevant results to the user.</em></p>
+<h2 id="applications-and-future-directions">Applications and Future Directions</h2>
+<p>The concept of similarity, operationalized through embeddings and vector indices, enables numerous applications:</p>
+<ol>
+<li><strong>Recommendation systems</strong> that suggest items similar to those a user has engaged with</li>
+<li><strong>Question answering</strong> that finds text passages semantically similar to a query</li>
+<li><strong>Clustering and classification</strong> that group similar items based on learned representations</li>
+<li><strong>Anomaly detection</strong> that identifies items dissimilar from normal patterns</li>
+<li><strong>Knowledge discovery</strong> that reveals non-obvious connections between entities</li>
+</ol>
+<p>As embedding techniques continue to advance, we can expect even more nuanced measures of similarity that account for contextual factors, domain-specific knowledge, and multimodal information spanning text, images, and structured data.</p>
+<p>The future of similarity-based systems will likely involve more sophisticated hybrid approaches that combine the strengths of different similarity models while addressing challenges related to computational efficiency, interpretability, and privacy-preserving similarity computation.</p>
 
 
 
@@ -1479,7 +1477,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../concept-enumeration/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Concept Enumeration">
+          <a href="../background/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Background">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1489,20 +1487,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Concept Enumeration
+                Background
               </div>
             </div>
           </a>
         
         
           
-          <a href="../concept-classification/" class="md-footer__link md-footer__link--next" aria-label="Next: Concept Classification">
+          <a href="../knowledge-representation/" class="md-footer__link md-footer__link--next" aria-label="Next: Knowledge Representation">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Concept Classification
+                Knowledge Representation
               </div>
             </div>
             <div class="md-footer__button md-icon">
