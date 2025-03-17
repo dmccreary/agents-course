@@ -38,18 +38,6 @@ A set of proposed standards for Agent interoperability.
 
 * See [Agntcy on Perplexity](https://www.perplexity.ai/search/agntcy-c.tl7VIyRK.c2F.27VxeCg)
 
-#### Agntcy
-
-A open-source agent collaboration standard to allow agents to communicate and work together.
-
-Agntcy was launched in early 2025 to establish standards and infrastructure for AI agent collaboration. This initiative, spearheaded by tech leaders Cisco, LangChain, and Galileo as core maintainers, with contributions from Glean and LlamaIndex, envisions creating an "Internet of Agents" – an open, interoperable foundation enabling AI agents from different platforms to communicate and work together seamlessly.
-
-AGNTCY is (pronounced "agency").
-
-- See [Perplexity](https://www.perplexity.ai/search/agntcy-c.tl7VIyRK.c2F.27VxeCg)
-- See also: [Tool](#tool)
-- See also: [Model Content Protocol](#model-context-protocol)
-
 #### Business Process Modeling Notation
 
 [BPMN References Guide](https://camunda.com/bpmn/reference/)
@@ -132,13 +120,11 @@ In the context of intelligent software agents, GPUs are relevant as they provide
 
 A term definition is considered to be consistent with ISO metadata registry guideline 11179 if it meets the following criteria:
 
-- **Precise**: Using words with unambiguous meanings that clearly delineate the exact scope and boundaries of the concept being defined.
-- **Concise**: Employing the minimum number of words necessary to communicate the complete meaning without unnecessary elaboration.
-- **Distinct**: Clearly differentiating the term from other related concepts to avoid confusion or overlap with existing terminology.
-- **Non-circular**: Avoiding the use of the term being defined within its own definition.
-- **Unencumbered with business rules**: Focusing solely on what the term means rather than including operational constraints, implementation details, or contextual usage rules.
-
-Our agents use these definitions to enrich prompts that use these terms.
+1. Precise
+2. Concise
+3. Distinct
+4. Non-circular
+5. Unencumbered with business rules
 
 #### Integrated Development Environment
 
@@ -236,7 +222,7 @@ The main disadvantage of LangChain is a long learning curve.  To use LangChain y
 
 A deep learning model that is trained on natural language and used to predict the next token.
 
-Examples of LLMs include BERT, DeepSeek, GPTs and Llama.
+Examples of LLMs include BERT, DeepSeek, GPTs and Llams.
 
 #### Model Context Protocol
 
@@ -244,7 +230,8 @@ An open protocol and standardized set of rules and data structures that govern t
 
 The Model Context Protocol (MCP) defines how prompts, system instructions, session states, user interactions, and relevant contextual metadata are structured, transmitted, and maintained to ensure consistent and coherent model behavior across interactions.
 
-**Example:** In an AI chatbot API, a Model Context Protocol may define how user messages, past conversation history, user preferences, and domain-specific knowledge are encoded and sent to the LLM, ensuring that responses remain relevant and contextually aware.
+Example:
+In an AI chatbot API, a Model Context Protocol may define how user messages, past conversation history, user preferences, and domain-specific knowledge are encoded and sent to the LLM, ensuring that responses remain relevant and contextually aware.
 
 - [Model Context Protocol](https://modelcontextprotocol.io/introduction)
 - [Cursor Model Content Protocol](https://docs.cursor.com/context/model-context-protocol)
@@ -257,17 +244,6 @@ In the context of intelligent software agents, multi-agent systems represent an 
 
 **Example:** For their capstone project, a team might develop a multi-agent system for software development assistance, with specialized agents handling requirements analysis, code generation, testing, and documentation, all coordinating through a shared communication protocol.
 
-#### Organizational Knowledge Graph
-
-A structured representation of enterprise-wide knowledge, processes, and information organized as interconnected entities and relationships that reflect an organization's collective understanding, operational contexts, and institutional memory.
-
-In the context of intelligent software agents, organizational knowledge graphs are relevant as they provide a comprehensive framework for agents to access, interpret, and reason with proprietary knowledge distributed across different levels and units of an organization. These graphs enable agents to navigate complex organizational structures, understand departmental interdependencies, and apply appropriate business rules while respecting established hierarchies. Organizational knowledge graphs serve as centralized repositories that standardize terminology, document relationships between business entities, and preserve institutional expertise that can be leveraged by intelligent systems to provide consistent and contextually appropriate assistance across the organization.
-
-**Example:** A financial services company might implement an organizational knowledge graph that maps relationships between products, compliance requirements, customer segments, and internal processes, with role-based access control (RBAC) ensuring that when executives interact with intelligence agents, they receive strategic insights across all domains, while customer service representatives' agents can only access relevant product information and approved customer interaction protocols appropriate to their authorization level.
-
-* See also: [Personal Knowledge Graph](#personal-knowledge-graph)
-- See also: [Project Knowledge Graph](#project-knowledge-graph)
-
 #### Ollama
 
 A software framework that enables deployment and execution of large language models locally on personal computing devices.
@@ -276,35 +252,13 @@ In the context of intelligent software agents, Ollama provides a crucial capabil
 
 **Example:** Before implementing their code agent, a student would first install Ollama on their system and download the DeepSeek R1 7B model to enable local execution of their agent without relying on external API services.
 
-#### Personal Knowledge Graph
-
-A structured representation of an individual's knowledge, experiences, and information organized as interconnected typed entities and typed relationships that reflect personal understanding and context.
-
-In the context of intelligent software agents, personal knowledge graphs are relevant as they provide a mechanism for agents to access, interpret, and reason with individualized knowledge that complements the general knowledge contained in large language models. These graphs enable agents to maintain persistent and personalized information contexts that evolve through interaction, allowing for more accurate and contextually appropriate responses to user queries based on their unique knowledge domain.
-
-**Example:** When a student uses a code agent for programming assistance throughout a semester, the agent might maintain a personal knowledge graph tracking which programming concepts the student has mastered, their preferred coding style, and frequently used libraries, enabling increasingly personalized recommendations and explanations tailored to the student's progressive understanding.
-
-- See also: [Project Knowledge Graph](#project-knowledge-graph)
-- See also: [Organizational Knowledge Graph](#organizational-knowledge-graph)
-
 #### Private Knowledge
 
 Knowledge that is not publicly available.
 
-For organizations, private knowledge usually is stored on an intranet or private company databases such as ERP and CRM systems.
+ For organizations, private knowledge usually is stored on an intranet or private company databases such as ERP and CRM systems.
 
 Software Agents must combine both public knowledge (usually within a LLM) with private knowledge.
-
-#### Project Knowledge Graph
-
-A structured representation of collective knowledge, resources, and information organized as interconnected entities and relationships that reflect a project team's shared understanding and context.
-
-In the context of intelligent software agents, project knowledge graphs are relevant as they provide a centralized mechanism for agents to access, interpret, and reason with domain-specific knowledge shared across a project team. These graphs enable consistent information exchange between team members and agents, capturing project-specific terminology, relationships, dependencies, and constraints that may not exist in general knowledge sources. Project knowledge graphs allow intelligent agents to provide contextually appropriate assistance that aligns with established project conventions and accumulated team wisdom.
-
-**Example:** A development team building an intelligent agent system might maintain a project knowledge graph documenting the relationships between various components, API specifications, design decisions, and implementation constraints, enabling their code agents to generate suggestions that adhere to project-specific patterns and integrate correctly with existing systems created by different team members.
-
-- See also: [Personal Knowledge Graph](#personal-knowledge-graph)
-- See also: [Organizational Knowledge Graph](#organizational-knowledge-graph)
 
 #### Procedural Code
 
