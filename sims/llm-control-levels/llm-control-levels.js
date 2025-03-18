@@ -43,7 +43,7 @@ function setup() {
 function updateLayout() {
     // Calculate responsive dimensions based on container width
     m = max(10, containerWidth * 0.03); // margins around the steps
-    mt = max(40, containerWidth * 0.08); // margin from the top
+    mt = 50; // margin from the top
     mr = max(30, containerWidth * 0.05); // margin from the right
     
     // Adjust step sizes based on container width
