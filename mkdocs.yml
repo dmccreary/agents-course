@@ -36,6 +36,7 @@ nav:
     - Project Rules: concepts/project-rules.md
     - PydanticAI: concepts/pydanticai.md
     - SmolAgents: concepts/smolagents.md
+    - Letta: concepts/letta.md
   - Tutorials:
     - Introduction: tutorials/index.md
     - Ollama: tutorials/ollama.md
