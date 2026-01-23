@@ -36,5 +36,11 @@
     "diagram",
     "interactive-demo",
     "network"
+  ],
+  "learningObjectives": [
+    "Understand the mathematical concept of llm control levels",
+    "Apply llm control levels to solve problems",
+    "Visualize and interpret llm control levels relationships",
+    "Experiment with parameters to observe their effects on llm control levels"
   ]
 }
