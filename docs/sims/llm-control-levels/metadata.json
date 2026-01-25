@@ -42,5 +42,28 @@
     "Apply llm control levels to solve problems",
     "Visualize and interpret llm control levels relationships",
     "Experiment with parameters to observe their effects on llm control levels"
-  ]
+  ],
+  "pedagogical": {
+    "pattern": "assessment",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "calculate",
+      "illustrate",
+      "implement",
+      "solve"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "immediate",
+      "corrective"
+    ],
+    "interactionStyle": "manipulate"
+  }
 }
